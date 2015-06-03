@@ -13,9 +13,10 @@ namespace GogoFamis
         public List<Location> LocationList;
         private List<Connection> ConnectionList;
 
-        public Map(List<Location> LocList, List<Connection> ConList) 
-        { this.LocationList = LocList;
-        this.ConnectionList = ConList;
+        public Map(List<Location> LocList, List<Connection> ConList)
+        {
+            this.LocationList = LocList;
+            this.ConnectionList = ConList;
         }
 
         public void ChangeColorConnection(Point p1, Point p2, bool color);

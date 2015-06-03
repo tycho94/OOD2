@@ -1,1 +1,2 @@
 C:\Users\Wai-Yip(Kip)\Downloads\OOD\OOD2\GogoFamis\GogoFamis\bin\Debug\GogoFamis.exe.config
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\GogoFamis\bin\Debug\GogoFamis.exe.config

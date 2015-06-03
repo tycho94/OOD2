@@ -9,13 +9,8 @@ namespace GogoFamis
 {
     class Location
     {
-
-
         public string Name;
         public Point Coordinates;
-
-
-
 
         public Location(string name, Point Coord)
         {
