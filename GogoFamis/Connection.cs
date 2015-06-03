@@ -13,16 +13,17 @@ namespace GogoFamis
         public Location SecondLoc;
         public double KilometerDistance;
         /// <summary>
-        /// Connection
+        /// Connection constructor
         /// </summary>
-        /// <param name="l1">one of the two locations the connection is connected to</param>
-        /// <param name="l2">one of the two locations the connection is connected to</param>
+        /// <param name="loc1">one of the two locations the connection is connected to</param>
+        /// <param name="loc2">one of the two locations the connection is connected to</param>
         /// <param name="dist">the distance from location to location</param>
-        public Connection(Location l1, Location l2, double dist) {
-            this.FirstLoc = l1;
-            this.SecondLoc = l2;
+        public Connection(Location loc1, Location loc2, double dist) {
+            this.FirstLoc = loc1;
+            this.SecondLoc = loc2;
             this.KilometerDistance = dist;
         }
+    
 
     }
 }
