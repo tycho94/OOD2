@@ -1,0 +1,1783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="8ea91e45-ff06-4ede-9446-3654fd4d0f27" name="RouteSearchSystem" linkedPackageId="3efbb852-317a-4943-9af7-de64b5371a53" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ec3e233e-6260-4248-a6ff-23ea4d6d04c9" name="Form1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="43992144-b899-46cb-9dff-e35590ea92bb" />
+        <targetEnds>
+          <association Id="46a24790-be8e-4b18-b7c1-c0508fe432b8" isDerived="false" sourceEndRoleName="Form1" targetEndRoleName="Map" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ba035629-8efd-44d2-afa7-cd925ea69dad" LastKnownName="Map" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9ca4f2d5-979e-4d30-bec0-11b35629ed34" name="Form1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0f350d47-895d-4fa3-aaf3-0f530c14316d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ec1b509-6a76-4cc4-9954-037764ab0eb1" name="Map" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b730bfe7-a67e-4d2b-b11f-6dac7bfb0442" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="61d4d3e4-baad-409a-b7a0-a3826610c12c" />
+          </association>
+          <association Id="f01b88f8-9547-4658-8ee9-fc06010b906b" isDerived="false" sourceEndRoleName="Form1" targetEndRoleName="FileHandler" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b1e326cf-6f3f-4037-84bf-3c93c9ca36d2" LastKnownName="FileHandler" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="27f1888b-392f-44bf-933a-915f25ef35b9" name="Form1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b7704a9e-bc8f-4f9b-a192-38101777f3da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="164629c8-2797-4193-917f-ae5191789fcd" name="FileHandler" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="19c8bbb0-940d-47c2-b159-c077bee40438" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="819975c1-def5-4ebf-be6c-00483d26cb45" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="568f84e3-1fce-4a27-82b9-3edd429cfe6a" name="Information" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b387bec9-4c17-4b0a-9afc-fc625e880c80" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6a132ad3-0bc1-4087-9895-a0f504a7e655" LastKnownName="Form" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a38d632f-02eb-466e-9334-a65e3ed84e38" name="ResizePanel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="19ab735b-aa1e-4b85-ad63-c7eb8ee7b9f4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a8e6ea2a-83f5-4d77-9da3-2142119ce7ce" direction="Return" isUnique="false">
+                  <elementDefinition Id="88d63915-dd64-470d-bad0-f3d5b0ca1067" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="54329fdb-b4ea-48bf-935f-7beb152d6551" LastKnownName="void()" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="98c6bb17-c1ee-4bdf-b04f-dd62d3045a65" name="x" direction="In" isUnique="false">
+                  <elementDefinition Id="3bb7daa7-595c-4861-832b-2156fa0550ef" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d62ead8f-f34d-4231-816c-11e20a733977" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b6a88a8c-8657-463d-9227-bc7a3afffd9f" name="y" direction="In" isUnique="false">
+                  <elementDefinition Id="2c4939da-451d-4c3e-8017-6de6f156795a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d62ead8f-f34d-4231-816c-11e20a733977" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0ac8dc3b-72c4-4c1e-bb9c-151b2aabd84e" name="paintCities" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="701b26c8-d1af-4718-8fa2-501e71cbce4b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="019fb4ba-f57e-4f14-b2ad-08e0fe838199" name="cities" direction="In" isUnique="false">
+                  <elementDefinition Id="86846490-e731-4da9-9a5d-9239f123c403" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="650cd2b9-37fa-4f6e-93ca-0f074b19f293" LastKnownName="List&lt;City&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a29b2f47-a271-434d-bfd4-e4e3da71301c" direction="Return" isUnique="false">
+                  <elementDefinition Id="f2a776ae-3790-441e-a04e-cfd055473a86" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="54329fdb-b4ea-48bf-935f-7beb152d6551" LastKnownName="void()" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a6669e59-3b27-4aed-861c-c7312a9625c7" name="AddMethod" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="26acac18-1500-4f43-b671-4c7090ed4250" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fc9aec4c-3b19-4292-89c7-179455e478ca" direction="Return" isUnique="false">
+                  <elementDefinition Id="dfd6af29-c477-4fab-9a59-f78029f61fc9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c2cb36ca-c052-4b84-b977-3b1b011efba5" name="origin_x_Click" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="685200a6-9cf2-4a5a-8a03-6c6d47b6834b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8f97f609-9b0f-4581-8eb6-e564ed388960" direction="Return" isUnique="false">
+                  <elementDefinition Id="b7cf325f-f4e2-4fd1-b888-fdb3b4ac610e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7ba2cca6-2c5a-4db2-9aa2-ae7e270ba8d9" name="sender" direction="In" isUnique="false">
+                  <elementDefinition Id="7bb96c3f-85d8-4c17-8bab-88cdf4739f36" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ad8930e6-a18b-4670-a490-4e1643131d8d" LastKnownName="object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f322e3ec-4ec7-4e33-8572-bcb61f1ead89" name="e" direction="In" isUnique="false">
+                  <elementDefinition Id="a172f6e3-1517-4571-88b6-586c99643127" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01e8337e-b8e3-4466-8366-1f16891fedee" LastKnownName="EventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e509cb66-07ac-4aff-b49c-5e1278085dbc" name="destination_x_Click" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ad04e95d-ea55-459b-8829-9519090a3892" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9d6d748b-4127-44fe-bf87-b305e7159462" name="sender" direction="In" isUnique="false">
+                  <elementDefinition Id="c3f6ba53-609b-4c94-912e-2ee7b8b257d5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ad8930e6-a18b-4670-a490-4e1643131d8d" LastKnownName="object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d010d44e-3b01-4bb4-a256-81afd2326507" name="e" direction="In" isUnique="false">
+                  <elementDefinition Id="762c7d16-314a-41cb-b43d-e1d31c5f2fb0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01e8337e-b8e3-4466-8366-1f16891fedee" LastKnownName="EventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="98ad70d2-1b37-4e9b-a0fa-025b9ec0e639" direction="Return" isUnique="false">
+                  <elementDefinition Id="1720b9c0-c8b5-42ca-8bb7-912f8ae6ad9b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e09135ad-92f8-4385-b275-3fa988f49eb6" name="nederlandToolStripMenuItem_Click" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0f37a912-a564-4a21-8abd-325f1db1d048" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d5db7e8c-8e86-49bc-ba45-10f5745256f5" direction="Return" isUnique="false">
+                  <elementDefinition Id="b421b0b2-b3a5-47c7-a6fb-ca08c3f16de8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5a9faeb2-06e5-4dc4-9e2c-6b6c0f49d74c" name="sender" direction="In" isUnique="false">
+                  <elementDefinition Id="6493df80-df38-4504-887a-58eb3a1d991d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ad8930e6-a18b-4670-a490-4e1643131d8d" LastKnownName="object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e399ca33-c651-4b82-8d88-b63ddb3a5bbd" name="e" direction="In" isUnique="false">
+                  <elementDefinition Id="3de89165-229d-493f-890f-4ecfac84dad8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01e8337e-b8e3-4466-8366-1f16891fedee" LastKnownName="EventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5123b0b3-adc9-4cab-8004-857d7de7d25c" name="CalBT_Click" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5a68cfe8-bb11-458e-9af9-54e58ce43107" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1a9d62b2-22ce-4bd1-a69f-e2ceb6b38fd4" direction="Return" isUnique="false">
+                  <elementDefinition Id="1f2eaba1-fed7-45f2-b4b8-e8c0a1c48585" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d1d4427d-8f42-4262-8e6d-9aa403e8c35f" name="sender" direction="In" isUnique="false">
+                  <elementDefinition Id="04a9d1f4-90c6-4c0c-a39f-e2282f69a796" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ad8930e6-a18b-4670-a490-4e1643131d8d" LastKnownName="object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="784c37d8-c57e-41a2-a22f-8b3c36c352f8" name="e" direction="In" isUnique="false">
+                  <elementDefinition Id="bc22074c-01d8-4a16-93a0-50ecaac2a6f9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01e8337e-b8e3-4466-8366-1f16891fedee" LastKnownName="EventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="309809c6-152e-4158-a5ec-0b448c8080e2" name="panel_Paint" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="45eacdec-8169-4660-89a9-35bef6657823" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6176d635-257d-4bf6-a11e-0d6583d7574f" direction="Return" isUnique="false">
+                  <elementDefinition Id="34b52f9b-04a4-40f8-8443-bfc0728baacc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fa7b3884-5981-42be-82eb-e2730c65edb8" name="sender" direction="In" isUnique="false">
+                  <elementDefinition Id="5062b61e-e041-4948-8990-eef98198ed6d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ad8930e6-a18b-4670-a490-4e1643131d8d" LastKnownName="object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8bfae317-4f1b-4b2c-81b3-d9daddd816a8" name="e" direction="In" isUnique="false">
+                  <elementDefinition Id="6c6f9195-a1f3-4cb0-aaf4-f41a0762f1c4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="925b8bf0-7999-44d7-9bc2-7c93c96439a5" LastKnownName="PaintEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f9aa6e7b-b22b-4ef0-b206-6652ce38b190" name="SelectionCheck" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="19583e37-ec6b-4152-b125-cdc65164257c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0f147167-85c0-42dd-a85a-cbd53af0fbc5" direction="Return" isUnique="false">
+                  <elementDefinition Id="ef668045-ec82-442a-a8b6-3b849d59f242" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d62ead8f-f34d-4231-816c-11e20a733977" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5169a2e4-6d30-4e9f-aac5-e5350941a43a" name="panel_MouseDown" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="68cb3952-9bef-47f4-9f91-0af0b9c0b475" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e3411f9c-d98d-49fc-8b75-21414cd7acbd" direction="Return" isUnique="false">
+                  <elementDefinition Id="29cc7493-9f29-416e-a3e2-ed13342df5e5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fd69088b-9bc2-4863-ad8d-ba4d6d3c6e88" name="sender" direction="In" isUnique="false">
+                  <elementDefinition Id="b4591003-92cd-4b58-a21e-2f12144261e8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ad8930e6-a18b-4670-a490-4e1643131d8d" LastKnownName="object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c83c1472-bfb1-437b-80b1-ced63179d19a" name="e" direction="In" isUnique="false">
+                  <elementDefinition Id="22778f66-ffe6-41e7-915a-35592f0bf01f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bc9ca2e4-c5a3-4998-b58f-06d26516a184" LastKnownName="MouseEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9ef4a5e1-c326-45b7-a3d6-3769d012c111" name="button2_Click" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b0b5c1c9-207c-4303-8b80-8f786d60f730" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="352a53b6-4388-4f7b-94a4-ef70a1c34ad5" name="sender" direction="In" isUnique="false">
+                  <elementDefinition Id="c4beb625-5d13-4cf8-ab65-36841687ab45" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ad8930e6-a18b-4670-a490-4e1643131d8d" LastKnownName="object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fd8baae6-4d34-4605-8adb-b4375a92ed94" name="e EventArgs" direction="In" isUnique="false">
+                  <elementDefinition Id="592545ac-4fcc-4c95-8155-f781e6108aad" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b62584d2-ee80-4a32-9609-bb04d158d4df" direction="Return" isUnique="false">
+                  <elementDefinition Id="da4c7ef8-0dbb-4ccd-9c5e-5fdf3fadc8e1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="67152793-771f-49eb-b5a9-617f78013272" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="add5238e-21d1-4d00-b663-d51b4b7d238f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ba035629-8efd-44d2-afa7-cd925ea69dad" name="Map" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="88646198-8bce-4493-bd5e-d2c9f9494c31" />
+        <targetEnds>
+          <association Id="ea052854-2abf-48f6-9124-338e3bd73a1b" isDerived="false" sourceEndRoleName="Map" targetEndRoleName="City" isLeaf="false" isAbstract="false">
+            <classMoniker Id="134b427c-c54d-4746-a518-4d0eff01309e" LastKnownName="City" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3d1eeef7-bcfd-493b-89b0-6100c9f2aec1" name="Map" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b45de3e5-c5c6-43d3-a4e4-f69a4753f0ec" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4dd47fdb-2740-4ab9-9683-631202c05b83" name="City" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="a24163fb-cd82-452a-b88b-7ce20714a7c5" name="Lower" value="0">
+                      <elementDefinition Id="1fbe7b32-996f-4d9b-b8e3-8dd8ec5ed50f" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b6f31d83-002f-44f2-85fc-7653874a2263" name="Upper" value=".*">
+                      <elementDefinition Id="539380f0-1eab-4a5d-98b3-9eec5f8293e0" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="37bfa4f9-081d-499b-bb81-67ba509019df" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2ed9fb82-07e5-4b04-a1c6-a39dd3d28294" />
+          </association>
+          <association Id="851e4566-b6a1-4703-aef8-e952f079dacf" isDerived="false" sourceEndRoleName="Map" targetEndRoleName="Calculation" isLeaf="false" isAbstract="false">
+            <classMoniker Id="283a8c04-de20-4cc2-925d-d099d677589d" LastKnownName="Calculation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="de1b8440-8d5c-4b2a-a0ed-b3c68a272e2d" name="Map" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b560a1c8-0b6f-4d77-9275-c0b54a3a4ea6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="908bcfa9-e46b-43c6-9a72-8141facae9e1" name="Calculation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d0c950e5-36b0-404b-9ea1-6da8a181f47f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5928df5d-e22c-461d-873f-0244a019de0e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="5ddd7127-8bef-4bfa-ba29-9cbbbac27401" name="Cities" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="92cb7afe-303a-430f-a34d-aedbe4f70e90" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="12264048-340b-4cfb-8dfc-1e364bc60022" LastKnownName="List&lt;City&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="ba07d947-1dbc-4327-9807-6af15a0816a4" name="_cal" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="48912084-7636-4b99-8ab9-c2f9d0ed8266" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b127799e-ea5a-4b32-bd96-d8ad9cbe9287" LastKnownName="Calculation" />
+            </type_NamedElement>
+          </property>
+          <property Id="221b8d3d-4aa9-4468-b7d4-e7771e8b2f78" name="_myBrush" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="12cac6c4-d845-4c56-bf4d-1747d25c357c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="824e4483-0464-412a-9300-aca13b8f925d" LastKnownName="Brush" />
+            </type_NamedElement>
+          </property>
+          <property Id="15dd7523-5925-4a98-a315-d51173e9fabe" name="_myPen" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="960e712c-aa0d-48a3-830d-042f653c37f0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f205ac87-7516-473b-bc5f-ba27fdcbbb84" LastKnownName="Pen" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="59297e34-648a-4b4f-9e0e-e6f5321b8af8" name="Map" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5d4e0c19-01fc-4def-a4a3-6bdebbb3b393" />
+          </operation>
+          <operation Id="95bdf066-9df7-42a1-bc37-b37343acb690" name="DrawCities" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="07975d33-e16f-41eb-9fc5-996ef4a71ace" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a2967aa6-af6a-4291-81c9-c17aabfdab36" direction="Return" isUnique="false">
+                  <elementDefinition Id="a3af38b0-420d-4588-ad67-4d253d1e1d68" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f19fe690-1b42-4698-bae3-305eba4843e8" name="City city" direction="In" isUnique="false">
+                  <elementDefinition Id="b7046639-585b-4bdd-83ca-f4b5035f3c74" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6c7f6100-b17b-4e6e-846b-6cfe60657929" name="Graphics gr" direction="In" isUnique="false">
+                  <elementDefinition Id="d215465d-861e-4767-aa54-c2ab3cab1a75" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="87777e63-ecf6-4916-915b-7c6db33d2df4" name="Brush brush" direction="In" isUnique="false">
+                  <elementDefinition Id="bc93be09-073d-49ea-980b-0ba8616a9e31" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a437f215-f213-49cd-963a-11550b847cd3" name="AddCity" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9d1a536e-739a-4d04-82f2-09910213b902" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f2fac789-0f8e-457d-896c-b716f895c14c" name="lines" direction="In" isUnique="false">
+                  <elementDefinition Id="fc7b05fc-507d-4335-b554-d879026c60e7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a956a927-b9d1-4645-b46f-fa2ff389bff4" LastKnownName="List&lt;string&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2a4f705d-0a62-496b-bd6f-1e368bc85ed2" name="cities" direction="In" isUnique="false">
+                  <elementDefinition Id="cf442b32-e989-49da-9779-7137d093e8e6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="650cd2b9-37fa-4f6e-93ca-0f074b19f293" LastKnownName="List&lt;City&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b9c2949e-574c-4ed3-a24f-01adc552b4fa" direction="Return" isUnique="false">
+                  <elementDefinition Id="3da94c88-836e-4cac-a720-bf3ecd4663bb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7db85439-46b2-40bc-897b-2802d8c3901f" name="AddConnection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cae5dbbb-2521-4c0c-8810-60316e86398d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="97467814-e3fd-4e58-826d-1ae99ea90af8" direction="Return" isUnique="false">
+                  <elementDefinition Id="035b3a9c-f1fa-4786-8788-90732d979f97" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="24c2fc34-3144-4d37-ada3-66ceb81fb257" name="lines" direction="In" isUnique="false">
+                  <elementDefinition Id="4cd6c409-a805-4ca8-a33e-56df13f0e081" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1a139633-b08f-4b1a-801b-2f7f46ea2410" LastKnownName="Lsit&lt;sring&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dc6b171d-837b-4f9a-a7d3-35bd495248aa" name="cities" direction="In" isUnique="false">
+                  <elementDefinition Id="1c189ede-c550-4578-ad6e-0b32878e3914" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="650cd2b9-37fa-4f6e-93ca-0f074b19f293" LastKnownName="List&lt;City&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="29192a7c-a698-4a46-9451-37ccec6d3688" name="IsExist" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5a74c9f3-c7ec-451c-8ceb-beb434dccb32" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="67329533-fe7b-4550-b85f-d7735b090343" name="city" direction="In" isUnique="false">
+                  <elementDefinition Id="c1e7ee40-cc2c-4eae-b983-2459202a3920" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="23b560d9-f1f2-435e-b926-63f1d444f4aa" name="Cities" direction="In" isUnique="false">
+                  <elementDefinition Id="fd52ba2c-f45e-4b4e-bd6b-3e0113aa23ea" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="650cd2b9-37fa-4f6e-93ca-0f074b19f293" LastKnownName="List&lt;City&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="311ebc19-c673-43af-873d-703845fdbefd" direction="Return" isUnique="false">
+                  <elementDefinition Id="538b5d92-8360-464a-bad9-56eddee11427" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6af4e702-b322-4669-b2f0-cb606d5f38aa" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f675f4ee-d892-4023-8f7a-e17481fca2a7" name="DrawMap" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8554e3cb-0126-4dcf-acb7-539a0051ecc6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4de79d9a-3183-4bf9-8012-62d34e8812b9" name="Graphics gr" direction="In" isUnique="false">
+                  <elementDefinition Id="6bdb5a92-ff58-4972-87e9-a91078bc7330" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e8bea828-5692-42df-8e7b-aef3480a8e9a" direction="Return" isUnique="false">
+                  <elementDefinition Id="c767b8f4-b24e-40fb-aacf-6af0097be70a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="aad4b0b4-08d7-483a-95e6-3d81a4d3d57d" name="DrawConnection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="adebf9a1-af8a-4670-879c-fe2357095456" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8f87e3ca-9f13-435f-b168-3aa5c16adb6c" direction="Return" isUnique="false">
+                  <elementDefinition Id="0270db89-d436-44c0-9ac6-f76198deea5e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="acb5236c-eb2e-4f56-997c-fd1f624b06a4" name="city City" direction="In" isUnique="false">
+                  <elementDefinition Id="f2f17468-dcc9-45f0-81ac-b86e5979b037" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1f144ba8-8d10-43ae-ae88-70e5eb0c971c" name="gr Graphics" direction="In" isUnique="false">
+                  <elementDefinition Id="1ad58893-1c72-43c3-9cb3-8a7acb26887b" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="12538dda-8c48-4d63-8008-179d36a81635" name="myPen Pen" direction="In" isUnique="false">
+                  <elementDefinition Id="b10be943-fb28-488f-abc4-a9182fb192d6" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d91a0104-611e-47b3-ab04-76895effe986" name="DrawRoutes" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7f994281-8abb-4017-acd5-07fade33944b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6241916c-d8ba-4675-8074-ad8c73ae1527" direction="Return" isUnique="false">
+                  <elementDefinition Id="53d3177d-6f24-4696-a803-b0d3b3e382c4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="584b5ccc-8457-43bd-b6ae-bf41159c67c2" name="route Route" direction="In" isUnique="false">
+                  <elementDefinition Id="a051901f-724e-4d1f-8b56-5932aa3d5dfa" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="098c3f32-4dbb-4e50-8af9-c7298377d126" name="gr Graphics" direction="In" isUnique="false">
+                  <elementDefinition Id="b7c2a4f1-d04b-45fa-a8b0-4264345dda95" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="feaead6c-2a93-4e23-863d-187643fb3376" name="WriteCityName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e812d1e9-ca70-400d-aa07-cf6e9a0f43e4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="355b3771-e63a-4075-861b-4789af6be14c" name="gr" direction="In" isUnique="false">
+                  <elementDefinition Id="770ee3fd-7711-4b9f-b110-432fe9e51063" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e69f3ef9-6266-44a3-9f8f-66d046eec46c" LastKnownName="Graphics" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="58535e9c-036b-4bb5-86ee-638e3e442914" name="c" direction="In" isUnique="false">
+                  <elementDefinition Id="2e8f5aab-28db-45b8-835d-7b9fa0c88b84" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fcbfde24-35cb-421c-a62c-eb809b74093d" direction="Return" isUnique="false">
+                  <elementDefinition Id="35ca3b70-0ccb-498b-9192-ddcca66b4cd4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="92e94fe6-2ca6-465b-ba50-b7e25e6073fb" name="LeastStopCal" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8d5c1b32-43e6-4eee-8309-8652293e721c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b8147e25-7911-49fb-85ae-02363571eb13" name="origin" direction="In" isUnique="false">
+                  <elementDefinition Id="01fe3c0e-b1c2-4087-854f-a7aa270c3aba" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d338833a-7e23-4d42-977e-35f3c1ad3d75" name="destination" direction="In" isUnique="false">
+                  <elementDefinition Id="90a1b66d-6d90-4545-8efb-8b9c8d6db8c6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d4560061-7b50-4345-9f20-843151778eab" name="gr Graphics" direction="In" isUnique="false">
+                  <elementDefinition Id="439d36d9-e60f-4f35-a80f-b985a08f54f3" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="970782c1-315f-4abf-a486-4a27907ed46c" direction="Return" isUnique="false">
+                  <elementDefinition Id="04583c3f-ec49-42bb-b64a-02dc8490f89f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="97c33d4a-f0e2-41b7-a85f-7adf7ce4ce97" name="RandomRouteCal" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0734b5d4-0735-4814-b486-e7a9acabba44" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7ed58d76-d8d6-4c46-9648-ee44ac65ed0f" direction="Return" isUnique="false">
+                  <elementDefinition Id="7ffc200d-7b67-48c1-99da-c84fb8064e5c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0934e78f-8451-41bb-9a1a-6a7868cff71b" name="origin" direction="In" isUnique="false">
+                  <elementDefinition Id="d8e3b9a0-5d97-4c63-b4cd-4edbd859091a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7993bd02-32ea-421f-919c-da0c4936f472" name="destination" direction="In" isUnique="false">
+                  <elementDefinition Id="60a9ada2-5fc2-43b7-8391-bd370345249b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d508451e-b589-41c5-a406-b7eaa28373f0" name="gr Graphics" direction="In" isUnique="false">
+                  <elementDefinition Id="d35b0167-227f-4854-804c-14c9edddec41" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b161d47f-c22d-4d12-980b-c3138b9d14d0" name="ShortesRouteCal" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c89497fb-1d7f-4916-a0ff-391e9417e923" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="98faff78-c30a-4698-81b5-579abb350b29" direction="Return" isUnique="false">
+                  <elementDefinition Id="8284ba74-7039-4099-bbed-27ffcb1769de" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2c1e5a46-a488-4601-b91b-9151b677d774" name="origin" direction="In" isUnique="false">
+                  <elementDefinition Id="41a70ccf-d279-4eb3-9993-decef9d285aa" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fad0d358-8171-45eb-afb5-600c184a8567" name="destination" direction="In" isUnique="false">
+                  <elementDefinition Id="56f121a5-9d3e-4b7b-9324-9f85f1664c2f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ac6e0d0e-cfcb-47e3-af0b-7202af5997f1" name="gr Graphics" direction="In" isUnique="false">
+                  <elementDefinition Id="b4c35299-2194-4d00-b7e7-197fecf2b7fb" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b1e326cf-6f3f-4037-84bf-3c93c9ca36d2" name="FileHandler" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5298fd97-1131-4790-94cd-bf99a4e76702" />
+        <ownedAttributesInternal>
+          <property Id="59e289ff-abf3-4eb8-9c7f-8c3b6c9a4bb3" name="fileName" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b0dc62c9-b994-4059-a54f-e7628059fbcd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a6f53129-14e6-4624-a4eb-64132e619dae" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="aaadd94a-4a01-4329-9e97-11bc90f3e199" name="filePath" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3750feff-dfd5-4bd8-8dec-3e3eecb6d966" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a6f53129-14e6-4624-a4eb-64132e619dae" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="3881098b-7a6c-42bf-adec-7fc1ee4aef73" name="FileHandler" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f6bb8846-aedb-48df-95c2-055ee4400441" />
+          </operation>
+          <operation Id="08c82dc6-bfe2-492c-8164-0f0a8bf12ee1" name="LoadMap" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="52fb6b52-6480-4016-beb2-83f943a53cae" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="11c62a2d-feed-4477-92d5-e7510944cba3" direction="Return" isUnique="false">
+                  <elementDefinition Id="605fc2d3-1439-4526-8075-7be08ca91d70" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4368188e-7173-4fbc-84cd-284669bc5c7c" LastKnownName="cities:List&lt;City&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a6f53129-14e6-4624-a4eb-64132e619dae" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="91db9381-c4d6-4469-82b2-32903f067d40" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3d6713fa-aa90-4a12-9c50-61090e174ae5" name="DijkstraRoute" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="09e417bd-496b-449e-a849-6083072a5998" />
+        <generalsInternal>
+          <generalization Id="88c3390e-4ee1-4027-87d8-dbc931fb8039" isSubstitutable="false">
+            <classMoniker Id="283a8c04-de20-4cc2-925d-d099d677589d" LastKnownName="Calculation" />
+            <elementDefinition Id="6223ac2f-ed6f-40fa-b555-538ad497790a" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="bf555af9-74c7-420e-b48b-4335551bc0c3" name="ResultRoute" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2b8574b8-cf06-4e8b-a4ac-c8b379a449eb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6b84cbfb-fd74-4fe9-b495-f68c7ef1bdf0" LastKnownName="Route" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b422eca0-c0c1-4b5d-a808-202fa1385661" name="Calculate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7e5d35e4-764d-47e5-b908-550fa8beb632" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1d80a594-9b04-4337-9f40-3a3edd84ad03" direction="Return" isUnique="false">
+                  <elementDefinition Id="ce42ff77-786e-4133-bf0f-dd7330535014" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ce08decb-2321-433a-98da-c6d8fc0eaec1" LastKnownName="route: Route)" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="67e8078c-5d0b-40bb-bb76-72858a31990c" name="origin" direction="In" isUnique="false">
+                  <elementDefinition Id="87f64fcd-2d6a-407c-a54b-02fc46689649" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c60c5ea8-d68c-4339-a213-20b61efde165" name="destination" direction="In" isUnique="false">
+                  <elementDefinition Id="3a733326-ed66-4878-825d-08668e3cab47" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b04a3bce-abc7-47db-aa06-5f7c7955c01a" name="ShortestPathMapFromStart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6ec16c24-9fb6-4215-b840-195cb74ec6ad" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="09efa82a-a965-4436-8569-d1bf8d768a31" name="Node start" direction="In" isUnique="false">
+                  <elementDefinition Id="5e674eb8-dbea-42ed-bf23-e73a8ffd701a" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c01789e2-5561-4f8e-a210-4f421665292a" direction="Return" isUnique="false">
+                  <elementDefinition Id="611cf73d-ea32-48fb-9950-dc0e735e1a43" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a33597d0-1891-452c-9e03-0b0e41b4df8a" LastKnownName="Node" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7705037c-3095-409f-9e51-a89420dcedb2" name="FindShortestPathFromStartToFinish" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="235e5276-978b-4209-80cc-1ec9bd0be4b3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="40104f22-228d-4485-982d-c4ceae671df2" name="Node start" direction="In" isUnique="false">
+                  <elementDefinition Id="6d9a2c12-5144-4032-86cc-ad6df9ec7c5c" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6e8fe724-484c-4ed8-b1d0-19c6943a3172" name="Node end" direction="In" isUnique="false">
+                  <elementDefinition Id="01a4056c-1959-41b5-ac06-9824a60eaf07" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1cdfe4f3-57b4-44f5-bb99-5a5bb0ae4b85" direction="Return" isUnique="false">
+                  <elementDefinition Id="79ab74c1-96c4-4432-b26b-0b496c6de699" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7cc5fa09-3943-4663-be51-7529ff258f00" LastKnownName="List&lt;Node&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a19e6c06-ca1b-40bd-b5a0-8f1b704c6ac7" name="GetFirstUnvisitedNodeSortedByVal:" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3aff4c16-b919-4e60-880e-0c6935d870a3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="62a153aa-8a0a-4870-b388-5dc790e7ebfc" direction="Return" isUnique="false">
+                  <elementDefinition Id="9f1f2012-8494-4857-bf36-e52223144775" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a33597d0-1891-452c-9e03-0b0e41b4df8a" LastKnownName="Node" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="806cb0bb-d3e0-48a5-a0b7-442e2cd4ae4d" name="GetUnvisitedSortByVal" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="abeb5c74-fa74-480b-91eb-4c1b7f2b0262" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6d236454-fc48-4cb1-9d17-6875c01d8aee" direction="Return" isUnique="false">
+                  <elementDefinition Id="4e3a0162-d266-45c8-87c1-3f09616fff67" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7cc5fa09-3943-4663-be51-7529ff258f00" LastKnownName="List&lt;Node&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="28b0faa9-b0e5-4320-abe8-4fc55e96ae9c" name="GetUnvisited" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b87d7346-8359-494e-a8a1-9f06e99a7d83" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="52e0f548-206a-4ce3-b004-341c5805a532" direction="Return" isUnique="false">
+                  <elementDefinition Id="23683a05-2425-4a71-8426-31070e4d5110" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7cc5fa09-3943-4663-be51-7529ff258f00" LastKnownName="List&lt;Node&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0232595f-78a5-4d33-a437-47ca7b4be32a" name="GetVisited" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9bb156a4-384e-4f96-8b31-75fe4a91e05d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="da9d1b72-2b6a-4931-a019-c9e4f8f361e2" direction="Return" isUnique="false">
+                  <elementDefinition Id="96543557-dbfd-495a-9fd6-db06eb302b87" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7cc5fa09-3943-4663-be51-7529ff258f00" LastKnownName="List&lt;Node&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="714f8ed6-3f60-4cd8-8265-98816c070bc3" name="LeastStopRoute" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="30f0cc42-4480-4789-a3a3-d1494375a489" />
+        <generalsInternal>
+          <generalization Id="5faf25c8-22f5-4e85-a8d7-9dc2dd40de3f" isSubstitutable="false">
+            <classMoniker Id="283a8c04-de20-4cc2-925d-d099d677589d" LastKnownName="Calculation" />
+            <elementDefinition Id="bea0fef1-2edb-4fe6-9e49-ff0f59d8e1a1" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="3aff24b5-56ae-4aa7-b26e-5f49667d5b4b" name="ResultRoute" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8409f08-8e55-4e26-94b8-2b01e7089634" />
+          </property>
+          <property Id="aed6352f-65e9-4c83-b981-bd2edf19d787" name="_alternativeRoutes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="84605980-4965-4845-9ec0-c227dd9b15b1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="62d21c88-c731-48c9-9fa6-3f53a922635d" LastKnownName="List&lt;Route&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="714d1188-7dc8-4448-a17e-2fbcbe82b2b0" name="_currentLevelQueue" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4a328e1a-4bf6-49e7-8587-1458387a005d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8df1acfe-bff4-4875-86fa-93efd616bf99" LastKnownName="List&lt;City&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="2262d80f-306e-41b5-9716-cf3486c8490f" name="_nextLevelQueue" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aae41189-3243-41ac-8961-72da32472738" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a39c1715-1610-4bd4-a505-eaa3df21a760" LastKnownName="List&lt;City&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="5b94b63b-e111-4275-a369-d9cab1dec7b0" name="_visitedCities" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bd781e95-2e5f-411e-b011-8f8a80883443" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="be1ed814-03d9-4457-b25b-6c618e4c1ac3" LastKnownName="List&lt;City&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="324abad8-264e-401b-a031-06a6a4d4169a" name="_currentCity" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="176e7701-084d-45cc-980f-ffd2fdd45a12" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2c0702b6-df0c-4c7f-a07d-dcc1c8eba396" LastKnownName="City" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="515be1ee-3cae-424b-81b9-d67dae6e434d" name="Calculate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7f187cd8-e6d0-4e37-9c32-fb962ad0e27a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="76cb68ab-1ef6-42fc-829f-8c09fe79258a" direction="Return" isUnique="false">
+                  <elementDefinition Id="40bfd1af-7606-4f93-a06f-d10ccd1fe7b5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ce08decb-2321-433a-98da-c6d8fc0eaec1" LastKnownName="route: Route)" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6716891f-f749-4af7-9ad8-3ad247e43c58" name="origin" direction="In" isUnique="false">
+                  <elementDefinition Id="c3db0cf2-6631-4dcc-838f-d6f86f42f3c6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="65bf4d86-9c2d-4eaf-973b-2523fed2ed7f" name="destination" direction="In" isUnique="false">
+                  <elementDefinition Id="d99ad0cd-f8d4-4793-9b7e-d9331293a204" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="27d6dd88-15db-47f5-b267-7af0d78b3701" name="InitalList" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7074c501-483d-4282-9369-e65701a2a0aa" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="97ab5df6-9c5f-4f34-9626-f4dff1ecc509" name="City origin" direction="In" isUnique="false">
+                  <elementDefinition Id="e027a4e6-616b-45db-af23-93f1538602a8" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7f4d57ad-572e-42d8-a6cf-26a813658acc" direction="Return" isUnique="false">
+                  <elementDefinition Id="60d43563-62b3-49fa-bc98-7601e90713b0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b204e340-98e2-47df-b72e-4c190575884d" name="FindDestination" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9d6fba6b-4c9e-4afe-bdf1-a1fbb5858ccb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="30a840de-de68-4419-827a-34838538106a" name="destination" direction="In" isUnique="false">
+                  <elementDefinition Id="696b9e8d-aa97-4fb8-9ef6-bae3d630d027" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="167c08e8-f521-4c8e-92e3-c7487d069608" name="neighbors" direction="In" isUnique="false">
+                  <elementDefinition Id="eb7fb1a7-6ce2-4333-a87e-89cb31354b39" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="650cd2b9-37fa-4f6e-93ca-0f074b19f293" LastKnownName="List&lt;City&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="250ece4e-bed2-461c-aa62-edfdb1c81df2" direction="Return" isUnique="false">
+                  <elementDefinition Id="14564c83-5447-43bf-9b7d-82c434f32345" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6af4e702-b322-4669-b2f0-cb606d5f38aa" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="861f4af3-a84f-492c-98ab-15df36911bfc" name="GetNeighbours" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="06520b2a-e3ae-4611-9af0-fc6c3d4e618c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5e0f116b-fee4-45bc-a9a0-caa644cc7440" name="City c" direction="In" isUnique="false">
+                  <elementDefinition Id="0e0d8066-0f73-4b1f-9f9d-1ab8772ee58f" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="af1cccf5-be12-4ff5-9e35-5ec456a7119d" direction="Return" isUnique="false">
+                  <elementDefinition Id="56effda3-ca86-40b6-8d8d-5ec8b25002fd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="650cd2b9-37fa-4f6e-93ca-0f074b19f293" LastKnownName="List&lt;City&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="3ea271da-ac66-48e4-ac5e-a9d2d647c17b" name="GetNotAppearedCities" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bb29aaf4-a300-49e8-81b0-6c7d2e77539a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="31016c9b-c3a4-4860-aabc-6c1606e4a4ca" name="List&lt;City&gt; neighbors" direction="In" isUnique="false">
+                  <elementDefinition Id="6b1db433-c3da-408a-a920-1c33f410bb43" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9059b845-ee02-4da9-94e4-6960bb408517" direction="Return" isUnique="false">
+                  <elementDefinition Id="7f1175ce-7410-4831-a399-b3050583703a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="650cd2b9-37fa-4f6e-93ca-0f074b19f293" LastKnownName="List&lt;City&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="dc1f432b-0314-427e-bc6a-2806fc4e0393" name="SetAlternativeRoute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8a98daef-2e40-4d6f-8368-d3d216b9bdd0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fc9aa587-6a70-496e-a0da-0b16fd03d0b2" name="City currentCity" direction="In" isUnique="false">
+                  <elementDefinition Id="a78e3e73-a702-4090-aa53-670fbe0ba3e7" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b6fb53cf-1d09-4080-87da-55d8800e0d3a" name="IEnumerable&lt;City&gt; notAppearedCities" direction="In" isUnique="false">
+                  <elementDefinition Id="4a2a14ef-c523-4408-a8ed-321fe70b1fc7" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b891e4b8-e364-4721-909c-8bd181c5340a" direction="Return" isUnique="false">
+                  <elementDefinition Id="3a4f229d-5a5e-49b7-a1b7-bad7a0083de7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="59cda79e-757d-4eee-8159-127bd54ccc7b" name="GetRouteFrom" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5000ce0f-36f7-4e33-9017-1c3fa3a93511" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="245d3298-f5bd-4ffe-b6ba-f2486b21d97e" name="IEnumerable&lt;Route&gt; alternativeRoute" direction="In" isUnique="false">
+                  <elementDefinition Id="2323277c-834d-45fa-98eb-1ada0728dff4" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4b233c2b-f798-4e83-9bb7-afdb332393e3" name="City destination" direction="In" isUnique="false">
+                  <elementDefinition Id="f8c6c6d9-e26f-41dc-82d6-565f5cb6096a" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0d306050-18dc-4845-b892-e0cd365ad181" direction="Return" isUnique="false">
+                  <elementDefinition Id="caba0daf-20dd-4fe4-a1f2-26458df7a101" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="edc182f6-d927-4141-84fb-416b4886c7bc" LastKnownName="Route" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b97dfce8-0cb9-4c05-88e9-c2b1306333af" name="RandomRoute" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ef5b8676-bcc6-4585-b0bd-e8d20c326c73" />
+        <generalsInternal>
+          <generalization Id="ea5c1f3c-ac97-462e-a175-1a08e56576a4" isSubstitutable="false">
+            <classMoniker Id="283a8c04-de20-4cc2-925d-d099d677589d" LastKnownName="Calculation" />
+            <elementDefinition Id="7826199e-8c7b-4295-9253-363d0e4c2aa9" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="8febb354-3827-4eae-b9e1-efdf4e4f89b5" name="ResultRoute" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f4cd3216-6b5c-4198-b646-75365adb3a77" />
+          </property>
+          <property Id="aeea2b20-5d3f-49f0-89d6-4eb8c6d3d200" name="_currentEveluateRoute" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a03931ce-b41d-4589-bd83-0d48dc274dd8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="07b7f32c-3bf1-483a-a93e-f0af81259d58" LastKnownName="Route" />
+            </type_NamedElement>
+          </property>
+          <property Id="daccde2c-1129-4b0b-8490-8d7bd3d1f1ed" name="_alternativeRoutes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d5255ac2-8bf0-4090-9ba9-17721b3e5c53" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="15607b8d-6a7f-4013-85f6-eafcc435e13f" LastKnownName="List&lt;Route&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="d0c21e1b-1ef0-4ae3-bcd2-747bdac12b21" name="_visited" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3bdeaa1c-9dbc-4d48-8724-4cd8a09e48a7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2de6190c-4489-4b94-b132-c1ec24bc7513" LastKnownName="List&lt;City&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="de881bf4-d5bd-4470-8e77-2b18929da477" name="Calculate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0e86ce2a-d97c-41a7-bc99-fb2eb5882a93" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7539323e-d39a-4bca-a273-fae00119c919" direction="Return" isUnique="false">
+                  <elementDefinition Id="18fb77ab-88ac-4f91-92b0-616ec5a4a532" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ce08decb-2321-433a-98da-c6d8fc0eaec1" LastKnownName="route: Route)" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1fe86ec0-8a5e-48b7-a395-a4bf79b8cedb" name="origin" direction="In" isUnique="false">
+                  <elementDefinition Id="7b4a899a-809c-405f-85f3-5a5a2a4bd50c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="95022ae2-9c20-4111-9fdd-1b341d692a16" name="destination" direction="In" isUnique="false">
+                  <elementDefinition Id="f60a8f55-ff3e-471b-aaca-c9232c673539" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0c0fa484-8ecc-40af-a901-8f985668a00c" name="Initialize" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7a90d065-67a3-4ea8-8d83-795837892310" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a003fc06-ec9b-4198-8dc8-9caa1d2e946e" name="origin" direction="In" isUnique="false">
+                  <elementDefinition Id="1b7767e7-8f8e-4a8d-a135-057edbac45e2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0383f57e-f699-4b9f-a24c-74efc31a2954" direction="Return" isUnique="false">
+                  <elementDefinition Id="44be5b80-c613-4d85-b166-153f6c08bb5f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0da30244-f169-4b0f-bdb0-6cf134fdcb8f" name="GetRandomRoute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a16fc325-476b-4f98-88e8-c41a5625a487" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1bc748d6-9991-437b-b65b-cee9745fac5e" name="List&lt;Route&gt; alternativeRoute" direction="In" isUnique="false">
+                  <elementDefinition Id="c0067823-5384-4b31-96b8-fb9117fce41e" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="db3db756-f76c-4a8a-9759-906558db8f3e" direction="Return" isUnique="false">
+                  <elementDefinition Id="8648f937-fb34-4c02-a3ea-9bc74d6504f8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="edc182f6-d927-4141-84fb-416b4886c7bc" LastKnownName="Route" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="34fcf35e-126c-4857-82e8-6a76dd2ec499" name="GetAvailableCities" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ca97e17c-95a9-4115-a462-b00f7bc68fab" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a9bc2371-5738-45a2-b2c0-e3bb17e4a885" direction="Return" isUnique="false">
+                  <elementDefinition Id="24d5a7e2-039d-4bae-8994-c634a51c19d9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="24015569-d19d-4c16-b672-19d27a871cb6" LastKnownName="List&lt;Route&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="58aa0b75-96f1-460b-b1a3-ff933fa67126" name="neighbors" direction="In" isUnique="false">
+                  <elementDefinition Id="5a8637d8-3841-4c8d-9432-f3afd36c09e5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="650cd2b9-37fa-4f6e-93ca-0f074b19f293" LastKnownName="List&lt;City&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d2be6090-82aa-49f8-a153-8c9cc0ff4350" name="currentRoute" direction="In" isUnique="false">
+                  <elementDefinition Id="47213187-80de-46fd-b907-8d56264a4eb7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="edc182f6-d927-4141-84fb-416b4886c7bc" LastKnownName="Route" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c3dd7712-c19e-488e-b471-0eb16eba0475" name="findTheDestination" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e3761ead-813d-42f4-98f9-b7db1e7e9ba6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bfe39d13-19b0-4da4-b648-321242d6264c" direction="Return" isUnique="false">
+                  <elementDefinition Id="dddaed1d-6ef7-4423-937a-01dc67561223" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="adeab698-c97c-49da-bd09-b177e492b453" LastKnownName="bool;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="18cd09dc-98f1-411e-a52e-55127e3bd9a5" name="ICollection&lt;City&gt; availableCities" direction="In" isUnique="false">
+                  <elementDefinition Id="8ae01550-2386-421a-8cc8-0a37c9760568" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3406cc54-ee6d-4772-8557-a5bb2527b02d" name="City destination" direction="In" isUnique="false">
+                  <elementDefinition Id="743fc825-b5b2-4c70-b700-daa0dca0e5be" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ef5d6bf6-53bd-4d3b-a23b-4f6a39a6f227" name="SetAlternativeRoute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b2cbee24-ca9c-4906-bfb5-710cce3fc21c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9768dc76-bd1b-4436-8fa7-004aea6017eb" name="City lastCity" direction="In" isUnique="false">
+                  <elementDefinition Id="8fd494ae-3e20-4620-aba4-dd1f931204e4" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="79567e5b-11da-4ff7-91bf-6651c8f3b499" name="IEnumerable&lt;City&gt; availableCities" direction="In" isUnique="false">
+                  <elementDefinition Id="815a1459-44e2-4c44-ac54-2571df554500" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5bc6bba5-8352-4937-8036-6daafa65f97d" direction="Return" isUnique="false">
+                  <elementDefinition Id="ef147ea7-7720-4774-95cc-7b0f724a47af" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="be987fd2-74fc-47f6-a4de-ab02b1f8c7c2" name="GetRouteFromAlternative" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="abd22098-cdce-4fcf-b457-89bde943c243" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="371cd742-0fbe-4689-8e43-d100308ef3f6" name="IEnumerable&lt;Route&gt; alternativeRoute" direction="In" isUnique="false">
+                  <elementDefinition Id="6b86ed5d-45ee-4706-a320-12ce378f2dd1" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ff8506ad-e4f0-4503-8c32-9cf040792039" name="City destination" direction="In" isUnique="false">
+                  <elementDefinition Id="abba1b0f-14c3-48db-a1af-4f6591c70d78" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b62ee90a-0337-4c85-8e91-f40a06bf441d" direction="Return" isUnique="false">
+                  <elementDefinition Id="c5d42b6e-1994-417d-983f-e3b4130f8776" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="edc182f6-d927-4141-84fb-416b4886c7bc" LastKnownName="Route" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="134b427c-c54d-4746-a518-4d0eff01309e" name="City" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8c5906f3-3e1a-47f5-b0d7-be146c4e4e11" />
+        <targetEnds>
+          <association Id="82278ee7-cbf6-433f-bb0b-331d22da4101" isDerived="false" sourceEndRoleName="City" targetEndRoleName="Connection" isLeaf="false" isAbstract="false">
+            <classMoniker Id="738b947f-2533-4a00-a8fb-970086e8a14f" LastKnownName="Connection" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8e0e92ec-d8d1-44af-bfe5-ee8cdc41ddd9" name="City" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="85333c66-7388-425b-8d68-7dd64dfbea57" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1d35c91e-256d-403d-bb3f-f3d850dc0a23" name="Connection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="6e652bf0-e8da-43de-8799-9147f69a9819" name="Lower" value="0">
+                      <elementDefinition Id="95e7b6b1-c991-40a7-b3e7-f364cc7ab6df" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="91b2a63c-788a-4b76-b60c-f8e9e848e40a" name="Upper" value=".*">
+                      <elementDefinition Id="d9160982-2be8-48f1-81d5-fae6ec3bfadd" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="1325f956-e5cc-4d60-80a8-defd588884fe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0123c069-64a3-48a7-8c40-79ca7e9aca07" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="b4af7b94-8c95-49b3-89e5-6e243d111b01" name="connections" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2dd68599-b82f-4ae1-bb4f-50dd74f92036" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ec21a9b6-43d7-4397-8c95-3ca1030177fa" LastKnownName="List&lt;Connection&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="57e93e17-babb-41ce-8a1e-efb5aa741be9" name="X" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ef106e13-bc92-4fb4-9eb8-43bf1c33417c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d62ead8f-f34d-4231-816c-11e20a733977" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="f89485e7-ad8b-4238-b05b-e88eeb60c7f8" name="name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f5ef31c8-36db-4c05-9d36-1637a3e42ca5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="053966da-620a-4c2e-b451-7491f05330a0" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="0d4c32f1-7672-456a-ba8e-a815cd422fdc" name="Y" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e4aa082d-eb90-42ad-897c-45beb19bbf3a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d62ead8f-f34d-4231-816c-11e20a733977" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="01e907b0-9664-40b7-af16-9a5317dadc85" name="City" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="300beb8e-f1df-464b-928b-c119b5298646" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2e8852b9-c8a2-4dae-9b01-1043ea1a8eed" direction="Return" isUnique="false">
+                  <elementDefinition Id="fc80202b-4bd1-43a4-87ea-0dc944f26c91" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="daa1be75-349e-406d-8892-5fb66cd70f18" name="name" direction="In" isUnique="false">
+                  <elementDefinition Id="d46db2d8-ef6c-445c-a72e-17c2f27b04bf" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a6f53129-14e6-4624-a4eb-64132e619dae" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="97d5d1f8-b57f-406d-bcab-b71ca2c2c7f0" name="x" direction="In" isUnique="false">
+                  <elementDefinition Id="39887a25-43c0-46b3-b576-48ed0e563271" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d62ead8f-f34d-4231-816c-11e20a733977" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="07771a56-be8d-43b9-a647-6a1e16f11d63" name="y" direction="In" isUnique="false">
+                  <elementDefinition Id="e1891da0-a9cd-4f10-884f-f10299dbbf3f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d62ead8f-f34d-4231-816c-11e20a733977" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ee336c8b-7501-4b36-a0a7-c32df50200df" name="GetConnections" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5eb47823-79ac-45af-840f-9232b922ffea" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c6cfe0fe-a9d2-4af0-bd8c-385954819e70" direction="Return" isUnique="false">
+                  <elementDefinition Id="152e7749-1f05-4785-b47e-69528ce30781" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4caf546f-8384-4d95-a0c3-7d6c6c976a5b" LastKnownName="connections: List&lt;Connection&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="d62ead8f-f34d-4231-816c-11e20a733977" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="9c189e10-acc0-4d88-83d7-ea6640db4bfd" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="738b947f-2533-4a00-a8fb-970086e8a14f" name="Connection" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="703ec06a-3414-4855-8b38-f2fe7c707914" />
+        <ownedAttributesInternal>
+          <property Id="9d61970d-d1c2-452a-a3f6-b60377a302d5" name="city" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="074e5dc3-3628-422d-9bc4-9a0f4745b1cf" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="71fb4d16-567a-4d15-b3fa-8f9f63aad476" LastKnownName="City" />
+            </type_NamedElement>
+          </property>
+          <property Id="3a71c535-666b-4d98-853e-b5b199f5d50b" name="length" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aa9c57b1-e316-4176-99f1-c96612a098af" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="557d3062-1d07-4b29-b18c-8a859328f4ea" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="db0e9dd8-426d-41cc-99b4-da5b019ce35a" name="Connection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d00efaf4-e5c4-41db-82ab-311f3e82bd8f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c44dc84a-e3f1-4288-b694-d33e17922e0c" direction="Return" isUnique="false">
+                  <elementDefinition Id="a7a136b1-a7df-447c-971c-6b4c5fc6a2ec" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="47a21dcc-4161-47c5-8a8a-2d5168dcce89" name="length" direction="In" isUnique="false">
+                  <elementDefinition Id="35434a72-d120-4f3a-9ec1-9fc8131d3b7c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d62ead8f-f34d-4231-816c-11e20a733977" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" name="City" isAbstract="false" isLeaf="false" cachedFullName="RouteSearchSystem::City">
+        <elementDefinition Id="8c5906f3-3e1a-47f5-b0d7-be146c4e4e11" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="650cd2b9-37fa-4f6e-93ca-0f074b19f293" name="List&lt;City&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;City&gt;">
+        <elementDefinition Id="f7a777a3-1d75-4f8b-8006-45e39e449386" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="283a8c04-de20-4cc2-925d-d099d677589d" name="Calculation" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="42fdbe6c-6d49-4592-881f-69092c511028" />
+        <ownedAttributesInternal>
+          <property Id="3faaa353-a1ce-4f90-bca7-3ed8b0bb57a3" name="ResultRoute" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d19a188f-f62c-4fc7-9533-3c4174fa6fc2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6b84cbfb-fd74-4fe9-b495-f68c7ef1bdf0" LastKnownName="Route" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="699a42b4-8c94-45c0-8345-777f145de3b3" name="Calculate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3726a5f1-7fe9-4774-9b45-a3dd33d38cc8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c8a35d76-5bfb-4432-8e94-8673a668fccd" direction="Return" isUnique="false">
+                  <elementDefinition Id="179d9762-9b4c-4133-961e-b4d8ef49b34c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ce08decb-2321-433a-98da-c6d8fc0eaec1" LastKnownName="route: Route)" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c72daef7-afd6-4191-9802-120997e45512" name="origin" direction="In" isUnique="false">
+                  <elementDefinition Id="0b2840ca-ed45-445f-8380-1b3a1784c38e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="02e2dee4-83f0-4256-87e2-0fa4490b4d1b" name="destination" direction="In" isUnique="false">
+                  <elementDefinition Id="6553e720-6ae7-4b73-a989-79cf0576fa33" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="22d4f66e-0645-472a-9b3f-0cc28e8bab08" LastKnownName="City" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="6b84cbfb-fd74-4fe9-b495-f68c7ef1bdf0" name="Route" isAbstract="false" isLeaf="false" cachedFullName="Route">
+        <elementDefinition Id="be1a3634-d35d-406e-b17d-1f24a0418b94" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="07942bac-7db5-4164-9374-bfdf6440f166" name="Route" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="62df03f2-a464-4a14-a5c9-142325d02a8d" />
+        <targetEnds>
+          <association Id="d6a1089b-36d3-47bd-bfe5-23685ac3e168" isDerived="false" sourceEndRoleName="Route" targetEndRoleName="Map" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ba035629-8efd-44d2-afa7-cd925ea69dad" LastKnownName="Map" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a81fbafe-49c7-418b-9f54-767b7e063c8f" name="Route" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="09e6acc6-9a1a-42ac-b304-601d3082e0f7" name="Lower" value="0">
+                      <elementDefinition Id="e954654b-8f92-4486-b609-7985fa0ec4b1" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d0bff94d-5775-47d3-b3ee-1268bb8d2f8a" name="Upper" value=".1">
+                      <elementDefinition Id="8689a4af-90fa-4e34-9b6d-e0d3742619d2" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c1e0b341-f908-465a-931a-1fa5f4a50c71" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="06546133-6f6a-40fb-a97f-a3fe608885cd" name="Map" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cd329dae-3cca-4795-a512-a23fc20965ce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e66c94a8-2b42-4a32-b35d-41cbfb19d54b" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="ddaa9180-5740-4436-a76c-269ffbcadf33" name="Stations" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="600421f2-d4e3-4723-9de5-6de6f4668f35" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="650cd2b9-37fa-4f6e-93ca-0f074b19f293" LastKnownName="List&lt;City&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="952f515b-ca06-4604-a4fb-7d54f41007fd" name="Route" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="96654a3c-5a4f-40b1-b807-00eb5268aa36" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="976d9380-549a-4228-ad93-9f8152a92059" direction="Return" isUnique="false">
+                  <elementDefinition Id="6710ffe8-c9f4-43b3-ace6-bc4c78e8a5a7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67152793-771f-49eb-b5a9-617f78013272" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="ce08decb-2321-433a-98da-c6d8fc0eaec1" name="route: Route)" isAbstract="false" isLeaf="false" cachedFullName="route: Route)">
+        <elementDefinition Id="cf3c307b-1fa9-42d3-a568-3b3efe0fddd2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6a132ad3-0bc1-4087-9895-a0f504a7e655" name="Form" isAbstract="false" isLeaf="false" cachedFullName="Form">
+        <elementDefinition Id="4bb17e2d-f52d-41d3-9ced-9ebd68e707b8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="54329fdb-b4ea-48bf-935f-7beb152d6551" name="void()" isAbstract="false" isLeaf="false" cachedFullName="void()">
+        <elementDefinition Id="36a8dc69-773a-4b98-82e9-677a2f961dea" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="12264048-340b-4cfb-8dfc-1e364bc60022" name="List&lt;City&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;City&gt;">
+        <elementDefinition Id="f7a777a3-1d75-4f8b-8006-45e39e449386" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4368188e-7173-4fbc-84cd-284669bc5c7c" name="cities:List&lt;City&gt;" isAbstract="false" isLeaf="false" cachedFullName="cities:List&lt;City&gt;">
+        <elementDefinition Id="77002280-6026-4a24-bc83-45fa76b879ce" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="053966da-620a-4c2e-b451-7491f05330a0" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="91db9381-c4d6-4469-82b2-32903f067d40" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ec21a9b6-43d7-4397-8c95-3ca1030177fa" name="List&lt;Connection&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Connection&gt;">
+        <elementDefinition Id="8fa84082-4746-439a-9fa3-49a131845212" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="71fb4d16-567a-4d15-b3fa-8f9f63aad476" name="City" isAbstract="false" isLeaf="false" cachedFullName="RouteSearchSystem::City">
+        <elementDefinition Id="8c5906f3-3e1a-47f5-b0d7-be146c4e4e11" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="557d3062-1d07-4b29-b18c-8a859328f4ea" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="9c189e10-acc0-4d88-83d7-ea6640db4bfd" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a956a927-b9d1-4645-b46f-fa2ff389bff4" name="List&lt;string&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;string&gt;">
+        <elementDefinition Id="24a5c183-74b6-402a-b4a0-51c2a5aac8a8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1a139633-b08f-4b1a-801b-2f7f46ea2410" name="Lsit&lt;sring&gt;" isAbstract="false" isLeaf="false" cachedFullName="Lsit&lt;sring&gt;">
+        <elementDefinition Id="ddbc1b8a-2cff-4062-8447-ef66be003ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6af4e702-b322-4669-b2f0-cb606d5f38aa" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="4ad82821-d944-42ce-bf87-e092d2c5de8c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e69f3ef9-6266-44a3-9f8f-66d046eec46c" name="Graphics" isAbstract="false" isLeaf="false" cachedFullName="Graphics">
+        <elementDefinition Id="f546af6c-abfc-425c-b46b-2b6aa22c3638" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ad8930e6-a18b-4670-a490-4e1643131d8d" name="object" isAbstract="false" isLeaf="false" cachedFullName="object">
+        <elementDefinition Id="f677ca5e-34f7-4eb4-9727-5f5a0bb0d8a9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="01e8337e-b8e3-4466-8366-1f16891fedee" name="EventArgs" isAbstract="false" isLeaf="false" cachedFullName="EventArgs">
+        <elementDefinition Id="fb324558-8233-4f88-b4d3-f7e47be0370a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="925b8bf0-7999-44d7-9bc2-7c93c96439a5" name="PaintEventArgs" isAbstract="false" isLeaf="false" cachedFullName="PaintEventArgs">
+        <elementDefinition Id="1f092cb6-31fd-4da2-8206-845ba03dcdc8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bc9ca2e4-c5a3-4998-b58f-06d26516a184" name="MouseEventArgs" isAbstract="false" isLeaf="false" cachedFullName="MouseEventArgs">
+        <elementDefinition Id="f470ae0b-5ca9-4699-b4ff-391b79051c23" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4caf546f-8384-4d95-a0c3-7d6c6c976a5b" name="connections: List&lt;Connection&gt;" isAbstract="false" isLeaf="false" cachedFullName="connections: List&lt;Connection&gt;">
+        <elementDefinition Id="700ce32f-bd56-4c08-a7dc-1fef2980f5ba" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="edc182f6-d927-4141-84fb-416b4886c7bc" name="Route" isAbstract="false" isLeaf="false" cachedFullName="RouteSearchSystem::Route">
+        <elementDefinition Id="62df03f2-a464-4a14-a5c9-142325d02a8d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="24015569-d19d-4c16-b672-19d27a871cb6" name="List&lt;Route&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Route&gt;">
+        <elementDefinition Id="0fc4755f-904c-4f9f-8830-0fc9494fb20a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a33597d0-1891-452c-9e03-0b0e41b4df8a" name="Node" isAbstract="false" isLeaf="false" cachedFullName="Node">
+        <elementDefinition Id="22b50ab9-5913-4d3b-88af-8b5427d68102" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="824e4483-0464-412a-9300-aca13b8f925d" name="Brush" isAbstract="false" isLeaf="false" cachedFullName="Brush">
+        <elementDefinition Id="1dae9f2d-cce4-40fa-9aa4-59f0fe515539" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f205ac87-7516-473b-bc5f-ba27fdcbbb84" name="Pen" isAbstract="false" isLeaf="false" cachedFullName="Pen">
+        <elementDefinition Id="e8cfdfc7-3366-49d7-873f-543720e80722" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b127799e-ea5a-4b32-bd96-d8ad9cbe9287" name="Calculation" isAbstract="false" isLeaf="false" cachedFullName="RouteSearchSystem::Calculation">
+        <elementDefinition Id="42fdbe6c-6d49-4592-881f-69092c511028" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="adeab698-c97c-49da-bd09-b177e492b453" name="bool;" isAbstract="false" isLeaf="false" cachedFullName="bool;">
+        <elementDefinition Id="8bb6fb36-c5a9-4bcd-8048-440e23cd2ab5" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="15607b8d-6a7f-4013-85f6-eafcc435e13f" name="List&lt;Route&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Route&gt;">
+        <elementDefinition Id="0fc4755f-904c-4f9f-8830-0fc9494fb20a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2de6190c-4489-4b94-b132-c1ec24bc7513" name="List&lt;City&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;City&gt;">
+        <elementDefinition Id="f7a777a3-1d75-4f8b-8006-45e39e449386" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="07b7f32c-3bf1-483a-a93e-f0af81259d58" name="Route" isAbstract="false" isLeaf="false" cachedFullName="RouteSearchSystem::Route">
+        <elementDefinition Id="62df03f2-a464-4a14-a5c9-142325d02a8d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="62d21c88-c731-48c9-9fa6-3f53a922635d" name="List&lt;Route&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Route&gt;">
+        <elementDefinition Id="0fc4755f-904c-4f9f-8830-0fc9494fb20a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8df1acfe-bff4-4875-86fa-93efd616bf99" name="List&lt;City&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;City&gt;">
+        <elementDefinition Id="f7a777a3-1d75-4f8b-8006-45e39e449386" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2c0702b6-df0c-4c7f-a07d-dcc1c8eba396" name="City" isAbstract="false" isLeaf="false" cachedFullName="RouteSearchSystem::City">
+        <elementDefinition Id="8c5906f3-3e1a-47f5-b0d7-be146c4e4e11" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a39c1715-1610-4bd4-a505-eaa3df21a760" name="List&lt;City&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;City&gt;">
+        <elementDefinition Id="f7a777a3-1d75-4f8b-8006-45e39e449386" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="be1ed814-03d9-4457-b25b-6c618e4c1ac3" name="List&lt;City&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;City&gt;">
+        <elementDefinition Id="f7a777a3-1d75-4f8b-8006-45e39e449386" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7cc5fa09-3943-4663-be51-7529ff258f00" name="List&lt;Node&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Node&gt;">
+        <elementDefinition Id="c0b4b3dd-f9a9-4bb2-861c-356d433ecb06" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="3efbb852-317a-4943-9af7-de64b5371a53" name="RouteSearchSystem">
+    <elementDefinition Id="09bca278-8fc1-473a-b048-e27fcfb91341" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ded3ccdc-49ba-4531-8efa-6aa9085b61cd">
+        <profileInstance Id="f96ecdcd-b533-41cc-9a24-2d07b798ef1e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="04a4522b-a4ed-42c0-a6bf-a4ddba2b842c">
+        <profileInstance Id="e6845056-d246-4f1f-8b71-81589b7e2e8b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

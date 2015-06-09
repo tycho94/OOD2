@@ -1,0 +1,55 @@
+376
+552
+Amersfoort 191 288
+Amsterdam 132 240
+Apeldoorn 280 273
+Arnhem 265 313
+Assen 331 92
+BergenOpZoom 73 412
+Breda 117 377
+Eindhoven 220 412
+Enschede 376 273
+DenHaag 73 313
+Groningen 324 67
+Haarlem 110 240
+DenHelder 117 108
+DenBosch 191 347
+Harlingen 184 67
+Hilversum 169 273
+Kerkrade 354 535
+Leeuwarden 250 67
+Lelystad 246 210
+Maastricht 250 552
+Middelburg 17 412
+Nijmegen 265 331
+Roodeschool 335 52
+Roermond 287 478
+Rotterdam 95 330
+Sittard 268 515
+Utrecht 155 305
+Venlo 302 412
+Winterswijk 346 313
+Zutphen 302 288
+Zwolle 287 208
+EINDE
+Amersfoort Apeldoorn 45 Arnhem 50 Hilversum 20 Utrecht 20 Zwolle 70
+Amsterdam DenHaag 55 Haarlem 20 DenHelder 80 Hilversum 35 Utrecht 40 Lelystad 48
+Apeldoorn Arnhem 30 Enschede 75 Zutphen 20 Zwolle 40
+Arnhem Nijmegen 20 Utrecht 65 Winterswijk 70 Zutphen 30
+Assen Groningen 30 Leeuwarden 75 Zwolle 75
+BergenOpZoom Breda 40 Rotterdam 85 Middelburg 60
+Breda DenBosch 45 Utrecht 70
+Eindhoven DenBosch 35 Maastricht 80 Roermond 55 Venlo 50
+Enschede Winterswijk 45 Zutphen 55 Zwolle 75
+DenHaag Haarlem 45 Rotterdam 25 Utrecht 65
+Groningen Leeuwarden 60 Roodeschool 38
+Haarlem DenHelder 70
+DenBosch Nijmegen 50 Rotterdam 80 Utrecht 55
+Hilversum Utrecht 20
+Leeuwarden Zwolle 90 Harlingen 27
+Maastricht Sittard 21
+Sittard Roermond 29 Kerkrade 21
+Nijmegen Venlo 75
+Roermond Venlo 20
+Winterswijk Zutphen 40
+END
