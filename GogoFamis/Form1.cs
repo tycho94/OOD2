@@ -15,17 +15,25 @@ namespace GogoFamis
 
         private Point routeStartPoint;
         private Point routeEndPoint;
-        private Algorithm algorithmChoice;
+        private Route algorithmChoice;
+        private static Point size;
+        private static FileHelper loader;
+        private Map map;
 
         public Form1()
         {
+            loader = new FileHelper("resources/nederland.txt");
+            map = new Map(loader.LoadLocation(out size));
+            map = new Map(loader.LoadLocation(out size), loader.LoadConnection(map.LocationList));
+
             InitializeComponent();
+
         }
 
 
-        public void ClearMap();
+        //public void ClearMap();
 
-        public void RefreshMap();
+        //public void RefreshMap();
 
         
 

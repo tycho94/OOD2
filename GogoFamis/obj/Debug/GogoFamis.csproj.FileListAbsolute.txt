@@ -1,2 +1,10 @@
 C:\Users\Wai-Yip(Kip)\Downloads\OOD\OOD2\GogoFamis\GogoFamis\bin\Debug\GogoFamis.exe.config
 C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\GogoFamis\bin\Debug\GogoFamis.exe.config
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\GogoFamis\obj\Debug\GogoFamis.csprojResolveAssemblyReference.cache
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\GogoFamis\obj\Debug\GogoFamis.Form1.resources
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\GogoFamis\obj\Debug\GogoFamis.Properties.Resources.resources
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\GogoFamis\obj\Debug\GogoFamis.csproj.GenerateResource.Cache
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\GogoFamis\bin\Debug\GogoFamis.exe
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\GogoFamis\bin\Debug\GogoFamis.pdb
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\GogoFamis\obj\Debug\GogoFamis.exe
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\GogoFamis\obj\Debug\GogoFamis.pdb

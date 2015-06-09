@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Drawing;
 
 namespace GogoFamis
 {
@@ -12,11 +14,101 @@ namespace GogoFamis
 
         public FileHelper(string location) { this.location = location; }
 
-        public List<Location> LoadLocation();
+        /// <summary>
+        /// loads location from a file
+        /// </summary>
+        /// <param name="maxX">size of map x</param>
+        /// <param name="maxY">size of map y</param>
+        /// <returns>returns a list of locations</returns>
+        public List<Location> LoadLocation(out Point size)
+        {
+            List<Location> temp = new List<Location>();
+            string line;
+            string[] parameters;
+            size = new Point();
+            try
+            {
+                using (StreamReader sr = new StreamReader(location))
+                {
+                    size.X = Convert.ToInt32(sr.ReadLine());
+                    size.Y = Convert.ToInt32(sr.ReadLine());
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        if (line == "END")
+                        {
+                            break;
+                        }
+                        parameters = line.Split(' ');
+                        temp.Add(new Location(parameters[0], new Point(Convert.ToInt32(parameters[1]), Convert.ToInt32(parameters[2]))));
+                    }
+                }
 
-        public List<Connection> LoadConnection();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error reading file");
+                Console.WriteLine(e.Message);
+                size.X = 0;
+                size.Y = 0;
+                temp = null;
+            }
+            return temp;
+        }
 
-        private void CheckLocationOverlap();
+        /// <summary>
+        /// reads from a file to create a list of connections
+        /// </summary>
+        /// <param name="loclist">here you must use the locationlist as parameter</param>
+        /// <returns>a list of connections</returns>
+        public List<Connection> LoadConnection(List<Location> loclist)
+        {
+            List<Connection> temp = new List<Connection>();
+            string line;
+            string[] parameters;
+            Location a = null, b = null;
+            try
+            {
+                using (StreamReader sr = new StreamReader(location))
+                {
+                    while ((line = sr.ReadLine()) != "END")
+                    {
+                    }
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        if (line == "END")
+                        {
+                            break;
+                        }
+                        parameters = line.Split(' ');
+                        for (int i = 1; i < parameters.Length; i += 2)
+                        {
+                            foreach (Location l in loclist)
+                            {
+                                if (l.Name == parameters[0])
+                                {
+                                    a = l;
+                                }
+
+                                if (l.Name == parameters[i])
+                                {
+                                    b = l;
+                                }
+                            }
+                            temp.Add(new Connection(a, b, Convert.ToInt32(parameters[i + 1])));
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error reading file");
+                Console.WriteLine(e.Message);
+                temp = null;
+            }
+            return temp;
+        }
+
+        ////private void CheckLocationOverlap();
 
     }
 }

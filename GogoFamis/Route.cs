@@ -7,14 +7,8 @@ using System.Drawing;
 
 namespace GogoFamis
 {
-    class Algorithm
+    abstract class Route
     {
-
-        private Point cur;
-        private Point next;
-
-
-
-        public Point CalculateNext();
+        //public Point CalculateNext();
     }
 }

@@ -11,23 +11,24 @@ namespace GogoFamis
     {
 
         public List<Location> LocationList;
-        private List<Connection> ConnectionList;
+        public List<Connection> ConnectionList;
 
         public Map(List<Location> LocList, List<Connection> ConList)
         {
             this.LocationList = LocList;
             this.ConnectionList = ConList;
         }
+        public Map(List<Location> LocList)
+        {
+            this.LocationList = LocList;
+        }
 
-        public void ChangeColorConnection(Point p1, Point p2, bool color);
+        //public void ChangeColor(Location p1, Location p2, bool color);
 
-        public bool CalculateRoute(Point start, Point des, Algorithm alg);
+        //public void CalculateRoute(Location start, Location dest, Route route);
 
-        public void DrawLine(Point p1, Point p2);
-        public void ClearLine(Point p1, Point p2)
-        ;
+        //public void DrawLine(Location p1, Location p2, Graphics gr);
 
-        public Point CalculateRouteArray(string alg);
 
 
 
