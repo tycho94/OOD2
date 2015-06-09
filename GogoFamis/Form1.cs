@@ -16,6 +16,9 @@ namespace GogoFamis
         private Point routeStartPoint;
         private Point routeEndPoint;
         private Route algorithmChoice;
+        /// <summary>
+        /// the x and y of this point will be furthest location, this way we can know how big to make the form map.
+        /// </summary>
         private static Point size;
         private static FileHelper loader;
         private Map map;
