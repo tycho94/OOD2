@@ -25,12 +25,12 @@ namespace GogoFamis
 
         public Form1()
         {
-            loader = new FileHelper("resources/nederland.txt");
+            loader = new FileHelper("../../resources/nederland.txt");
             map = new Map(loader.LoadLocation(out size));
             map = new Map(loader.LoadLocation(out size), loader.LoadConnection(map.LocationList));
-
+            Console.WriteLine(map.LocationList[(map.LocationList.Count)-1].Name);
+            Console.WriteLine(map.LocationList[(map.LocationList.Count) - 2].Name);
             InitializeComponent();
-
         }
 
 
@@ -38,7 +38,7 @@ namespace GogoFamis
 
         //public void RefreshMap();
 
-        
+
 
     }
 }

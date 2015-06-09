@@ -17,8 +17,7 @@ namespace GogoFamis
         /// <summary>
         /// loads location from a file
         /// </summary>
-        /// <param name="maxX">size of map x</param>
-        /// <param name="maxY">size of map y</param>
+        /// <param name="size">size of map x</param>
         /// <returns>returns a list of locations</returns>
         public List<Location> LoadLocation(out Point size)
         {
@@ -26,8 +25,7 @@ namespace GogoFamis
             string line;
             string[] parameters;
             size = new Point();
-            try
-            {
+
                 using (StreamReader sr = new StreamReader(location))
                 {
                     size.X = Convert.ToInt32(sr.ReadLine());
@@ -43,7 +41,7 @@ namespace GogoFamis
                     }
                 }
 
-            }
+            /*}
             catch (Exception e)
             {
                 Console.WriteLine("Error reading file");
@@ -51,7 +49,7 @@ namespace GogoFamis
                 size.X = 0;
                 size.Y = 0;
                 temp = null;
-            }
+            }*/
             return temp;
         }
 
