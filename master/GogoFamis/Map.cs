@@ -23,11 +23,15 @@ namespace GogoFamis
             this.LocationList = LocList;
         }
 
-        //public void ChangeColor(Location p1, Location p2, bool color);
+        public void ChangeColor(List<Location> loclist)
+        {
 
-        //public void CalculateRoute(Location start, Location dest, Route route);
+        }
 
-        //public void DrawLine(Location p1, Location p2, Graphics gr);
+        public List<Location> CalculateRoute(Location start, Location dest, Route route)
+        {
+            
+        }
 
 
 

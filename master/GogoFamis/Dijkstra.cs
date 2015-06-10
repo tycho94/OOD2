@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace GogoFamis
 {
-    class Dijkstra
+    class Dijkstra : Route
     {
-        ////public override Location CalculateNextLocation();
+        public override List<Location> CalculateNext()
+        {
+            List<Location> list;
+
+            return list;
+        }
 
     }
 }

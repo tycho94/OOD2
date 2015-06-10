@@ -9,6 +9,6 @@ namespace GogoFamis
 {
     abstract class Route
     {
-        //public Point CalculateNext();
+        public abstract List<Location> CalculateNext();
     }
 }

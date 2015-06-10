@@ -22,22 +22,20 @@ namespace GogoFamis
         private static Point size;
         private static FileHelper loader;
         private Map map;
-        
+
 
         public Form1()
         {
-            
             InitializeComponent();
             loader = new FileHelper("../../resources/nederland.txt");
             map = new Map(loader.LoadLocation(out size));
             map = new Map(loader.LoadLocation(out size), loader.LoadConnection(map.LocationList));
-            foreach(Location l in map.LocationList)
+            pbMap.Size = (Size)size;
+            foreach (Location l in map.LocationList)
             {
                 cbStart.Items.Add(l.Name);
                 cbDest.Items.Add(l.Name);
             }
-
-            
         }
 
         private void pbMap_Paint(object sender, PaintEventArgs e)
@@ -49,11 +47,13 @@ namespace GogoFamis
         {
             foreach (Location l in loclist)
             {
-                gr.DrawEllipse(new Pen(Color.Red, 2f), l.Coordinates.X, l.Coordinates.Y, 15, 15);
-                gr.DrawString(l.Name, new Font("Arial", 6), Brushes.Black, new Point(l.Coordinates.X, l.Coordinates.Y));
+                gr.DrawEllipse(new Pen(Color.Red, 2f), l.Coordinates.X - 5, l.Coordinates.Y - 5, 10, 10);
+                gr.DrawString(l.Name, new Font("Arial", 6), Brushes.Black, new Point(l.Coordinates.X + 5, l.Coordinates.Y));
             }
             foreach (Connection c in conlist)
+            {
                 gr.DrawLine(new Pen(Brushes.Black), c.Loc1.Coordinates, c.Loc2.Coordinates);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace GogoFamis
 
         private void pbMap_MouseMove(object sender, MouseEventArgs e)
         {
-            lblCoor.Text = e.X.ToString() + ", " + e.Y.ToString();   
+            lblCoor.Text = e.X.ToString() + ", " + e.Y.ToString();
         }
 
         private void pbMap_Click(object sender, EventArgs e)

@@ -26,20 +26,20 @@ namespace GogoFamis
             string[] parameters;
             size = new Point();
 
-                using (StreamReader sr = new StreamReader(location))
+            using (StreamReader sr = new StreamReader(location))
+            {
+                size.X = Convert.ToInt32(sr.ReadLine()) + 50;
+                size.Y = Convert.ToInt32(sr.ReadLine()) + 50;
+                while ((line = sr.ReadLine()) != null)
                 {
-                    size.X = Convert.ToInt32(sr.ReadLine());
-                    size.Y = Convert.ToInt32(sr.ReadLine());
-                    while ((line = sr.ReadLine()) != null)
+                    if (line == "END")
                     {
-                        if (line == "END")
-                        {
-                            break;
-                        }
-                        parameters = line.Split(' ');
-                        temp.Add(new Location(parameters[0], new Point(Convert.ToInt32(parameters[1]), Convert.ToInt32(parameters[2]))));
+                        break;
                     }
+                    parameters = line.Split(' ');
+                    temp.Add(new Location(parameters[0], new Point(Convert.ToInt32(parameters[1]), Convert.ToInt32(parameters[2]))));
                 }
+            }
 
             /*}
             catch (Exception e)

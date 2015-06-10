@@ -18,12 +18,13 @@ namespace GogoFamis
         /// <param name="loc1">the location1 it is connected to</param>
         /// <param name="loc1">the location2 it is connected to</param>
         /// <param name="dist">the distance from location to location</param>
-        public Connection(Location loc1, Location loc2, double dist) {
+        public Connection(Location loc1, Location loc2, double dist)
+        {
             this.Loc1 = loc1;
             this.Loc2 = loc2;
             this.KilometerDistance = dist;
         }
-    
+
 
     }
 }
