@@ -10,12 +10,12 @@ namespace GogoFamis
     class Location
     {
         public string Name;
-        public Point Coordinates1234;
+        public Point Coordinates;
 
         public Location(string name, Point Coord)
         {
             this.Name = name;
-            this.Coordinates1234 = Coord;
+            this.Coordinates = Coord;
         }
 
     }
