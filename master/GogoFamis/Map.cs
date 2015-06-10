@@ -28,7 +28,7 @@ namespace GogoFamis
 
         }
 
-        //public List<Location> CalculateRoute(Location start, Location dest, Route route)
+        //public List<Location> CalculateRoute(Location start, Location dest, Route route, List<Connection> conlist, List<Location> loclist)
         //{
         //    List<Location> loclist;
 

@@ -23,3 +23,6 @@ C:\Study\OOD2\Map_project\TheMapProject-WorkOnThisOne\TheMapProject\obj\Debug\Th
 C:\Users\Wai-Yip(Kip)\Downloads\OOD\OOD2\Dijkstra\TheMapProject-WorkOnThisOne\TheMapProject\bin\Debug\TheMapProject.exe.config
 C:\Users\Wai-Yip(Kip)\Downloads\OOD\OOD2\Dijkstra\TheMapProject-WorkOnThisOne\TheMapProject\obj\Debug\TheMapProject.exe
 C:\Users\Wai-Yip(Kip)\Downloads\OOD\OOD2\Dijkstra\TheMapProject-WorkOnThisOne\TheMapProject\obj\Debug\TheMapProject.pdb
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\OtherGroupsSolution\TheMapProject-WorkOnThisOne\TheMapProject\bin\Debug\TheMapProject.exe.config
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\OtherGroupsSolution\TheMapProject-WorkOnThisOne\TheMapProject\obj\Debug\TheMapProject.exe
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\OtherGroupsSolution\TheMapProject-WorkOnThisOne\TheMapProject\obj\Debug\TheMapProject.pdb
