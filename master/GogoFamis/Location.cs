@@ -11,12 +11,21 @@ namespace GogoFamis
     {
         public string Name;
         public Point Coordinates;
+        public List<Connection> Connections;
+
 
         public Location(string name, Point Coord)
         {
             this.Name = name;
             this.Coordinates = Coord;
+            Connections = new List<Connection>();
         }
 
+
+
+        public List<Connection> GetConnection()
+        {
+            return Connections; 
+        }
     }
 }

@@ -234,6 +234,16 @@ namespace TheMapProject
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void method_cbx_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
    
 
 

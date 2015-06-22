@@ -1,0 +1,13 @@
+376
+552
+Ji 191 288
+Yancey 132 240
+Kiril 280 273
+Stoyan 265 313
+Trina 331 92
+EINDE
+Ji Kiril 90 Trina 27
+Yancey Stoyan 21 Trina 30
+Kiril Trina 29
+Stoyan Ji 20
+END

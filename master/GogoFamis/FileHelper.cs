@@ -11,8 +11,12 @@ namespace GogoFamis
     class FileHelper
     {
         private string location;
+        
 
-        public FileHelper(string location) { this.location = location; }
+        public FileHelper(string location)
+        { 
+            this.location = location; 
+        }
 
         /// <summary>
         /// loads location from a file

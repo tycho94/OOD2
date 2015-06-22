@@ -17,6 +17,7 @@ namespace GogoFamis
         private Point routeStartPoint;
         private Point routeEndPoint;
         private Route algorithmChoice;
+        
         /// <summary>
         /// the x and y of this point will be furthest location, this way we can know how big to make the form map.
         /// </summary>
@@ -28,20 +29,16 @@ namespace GogoFamis
         public Form1()
         {
             InitializeComponent();
-            loader = new FileHelper("../../resources/nederland.txt");
-            map = new Map(loader.LoadLocation(out size));
-            map = new Map(loader.LoadLocation(out size), loader.LoadConnection(map.LocationList));
-            pbMap.Size = (Size)size;
-            foreach (Location l in map.LocationList)
-            {
-                cbStart.Items.Add(l.Name);
-                cbDest.Items.Add(l.Name);
-            }
+
+            
         }
 
         private void pbMap_Paint(object sender, PaintEventArgs e)
         {
-            Draw(e.Graphics, map.LocationList, map.ConnectionList);
+            if (loader == null) { return; }
+            else
+                Draw(e.Graphics, map.LocationList, map.ConnectionList);
+               
         }
 
         private void Draw(Graphics gr, List<Location> loclist, List<Connection> conlist)
@@ -50,11 +47,13 @@ namespace GogoFamis
             {
                 gr.DrawEllipse(new Pen(Color.Red, 2f), l.Coordinates.X - 5, l.Coordinates.Y - 5, 10, 10);
                 gr.DrawString(l.Name, new Font("Arial", 6), Brushes.Black, new Point(l.Coordinates.X + 5, l.Coordinates.Y));
+
             }
-            foreach (Connection c in conlist)
+              foreach (Connection c in conlist)
             {
                 gr.DrawLine(new Pen(Brushes.Black), c.Loc1.Coordinates, c.Loc2.Coordinates);
             }
+   
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -81,11 +80,6 @@ namespace GogoFamis
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void loadFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -98,15 +92,49 @@ namespace GogoFamis
                 if ((stream = openDialog.OpenFile()) != null)
                 {
                     string fn = openDialog.FileName;
-                    string ft = File.ReadAllText(fn);
+                   
 
-
+                    loader = new FileHelper(fn);
+                    map = new Map(loader.LoadLocation(out size));
+                    map = new Map(loader.LoadLocation(out size), loader.LoadConnection(map.LocationList));
+                    pbMap.Size = (Size)size;
+                    foreach (Location l in map.LocationList)
+                    {
+                        cbStart.Items.Add(l.Name);
+                        cbDest.Items.Add(l.Name);
+                    }
+                    pbMap.Refresh();
+ 
                 }
             }
             else
             {
-                MessageBox.Show("No load");
+                MessageBox.Show("No file has been loaded");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbMap_MouseDown(object sender, MouseEventArgs e)
+        {
+           
+        }
+
+        private void cbDest_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           cbDest.SelectedItem = routeEndPoint;
+           Brush brush = new SolidBrush(Color.Blue);
+           
+           
+            
+        }
+
+        private void cbStart_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbStart.SelectedItem = routeStartPoint;
         }
 
 

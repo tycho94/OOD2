@@ -187,6 +187,7 @@
             this.method_cbx.Sorted = true;
             this.method_cbx.TabIndex = 0;
             this.method_cbx.Text = "                      Method";
+            this.method_cbx.SelectedIndexChanged += new System.EventHandler(this.method_cbx_SelectedIndexChanged);
             // 
             // CalBT
             // 
@@ -311,6 +312,7 @@
             this.Name = "Form1";
             this.Text = "The Map Project";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
