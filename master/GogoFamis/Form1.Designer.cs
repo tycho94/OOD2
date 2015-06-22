@@ -136,8 +136,8 @@
             this.pbMap.TabIndex = 13;
             this.pbMap.TabStop = false;
             this.pbMap.Click += new System.EventHandler(this.pbMap_Click);
-            this.pbMap.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pbMap_MouseMove);
             this.pbMap.Paint += new System.Windows.Forms.PaintEventHandler(this.pbMap_Paint);
+            this.pbMap.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pbMap_MouseMove);
             // 
             // menuStrip1
             // 
@@ -161,8 +161,9 @@
             // loadFileToolStripMenuItem
             // 
             this.loadFileToolStripMenuItem.Name = "loadFileToolStripMenuItem";
-            this.loadFileToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.loadFileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.loadFileToolStripMenuItem.Text = "Load File";
+            this.loadFileToolStripMenuItem.Click += new System.EventHandler(this.loadFileToolStripMenuItem_Click);
             // 
             // cbAlgorithm
             // 
@@ -211,6 +212,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbMap)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -78,6 +79,34 @@ namespace GogoFamis
         private void pbMap_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loadFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Stream stream;
+            OpenFileDialog openDialog = new OpenFileDialog();
+            openDialog.Filter = "txt files (*.txt)|*.txt";
+
+            if (openDialog.ShowDialog() == DialogResult.OK)
+            {
+                if ((stream = openDialog.OpenFile()) != null)
+                {
+                    string fn = openDialog.FileName;
+                    string ft = File.ReadAllText(fn);
+
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("No load");
+            }
         }
 
 
