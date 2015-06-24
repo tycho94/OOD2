@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Drawing;
 
-namespace GogoFamis
+namespace GogoFamis 
 {
-    abstract class Route
+    class Route
     {
-        public abstract List<Location> CalculateNext();
+        public List<Location> Stations { get; set; }
+
+        public Route()
+        {
+            Stations = new List<Location>();
+        }
+
     }
 }

@@ -10,4 +10,4 @@ Ji Kiril 90 Trina 27
 Yancey Stoyan 21 Trina 30
 Kiril Trina 29
 Stoyan Ji 20
-END
+EINDE

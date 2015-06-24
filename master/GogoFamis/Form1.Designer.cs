@@ -143,9 +143,7 @@
             this.pbMap.Size = new System.Drawing.Size(535, 574);
             this.pbMap.TabIndex = 13;
             this.pbMap.TabStop = false;
-            this.pbMap.Click += new System.EventHandler(this.pbMap_Click);
             this.pbMap.Paint += new System.Windows.Forms.PaintEventHandler(this.pbMap_Paint);
-            this.pbMap.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbMap_MouseDown);
             this.pbMap.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pbMap_MouseMove);
             // 
             // menuStrip1
@@ -227,8 +225,6 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form1";
             this.Text = "GoGoFamis";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbMap)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

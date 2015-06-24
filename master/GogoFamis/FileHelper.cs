@@ -36,7 +36,7 @@ namespace GogoFamis
                 size.Y = Convert.ToInt32(sr.ReadLine()) + 50;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    if (line == "END")
+                    if (line == "EINDE")
                     {
                         break;
                     }
@@ -72,12 +72,12 @@ namespace GogoFamis
             {
                 using (StreamReader sr = new StreamReader(location))
                 {
-                    while ((line = sr.ReadLine()) != "END")
+                    while ((line = sr.ReadLine()) != "EINDE")
                     {
                     }
                     while ((line = sr.ReadLine()) != null)
                     {
-                        if (line == "END")
+                        if (line == "EINDE")
                         {
                             break;
                         }

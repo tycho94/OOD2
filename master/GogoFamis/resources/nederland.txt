@@ -31,7 +31,7 @@ Venlo 302 412
 Winterswijk 346 313
 Zutphen 302 288
 Zwolle 287 208
-END
+EINDE
 Amersfoort Apeldoorn 45 Arnhem 50 Hilversum 20 Utrecht 20 Zwolle 70
 Amsterdam DenHaag 55 Haarlem 20 DenHelder 80 Hilversum 35 Utrecht 40 Lelystad 48
 Apeldoorn Arnhem 30 Enschede 75 Zutphen 20 Zwolle 40
@@ -52,4 +52,4 @@ Sittard Roermond 29 Kerkrade 21
 Nijmegen Venlo 75
 Roermond Venlo 20
 Winterswijk Zutphen 40
-END
+EINDE

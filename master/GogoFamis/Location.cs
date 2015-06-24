@@ -23,7 +23,7 @@ namespace GogoFamis
 
 
 
-        public List<Connection> GetConnection()
+        public List<Connection> GetConnections()
         {
             return Connections; 
         }
