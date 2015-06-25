@@ -35,17 +35,20 @@ namespace GogoFamis
 
         private void pbMap_Paint(object sender, PaintEventArgs e)
         {
+            brush = new SolidBrush(Color.Red);
             if (loader == null) { return; }
             else
-                Draw(e.Graphics, map.LocationList);
+                DrawCity(e.Graphics, map.LocationList,brush);
                 DrawCon(e.Graphics, map.ConnectionList);
         }
 
-        private void Draw(Graphics gr, List<Location> loclist)
+        private void DrawCity(Graphics gr, List<Location> loclist, Brush brush)
         {
+           
             foreach (Location l in loclist)
             {
-                gr.DrawEllipse(new Pen(Color.Red, 2f), l.Coordinates.X - 5, l.Coordinates.Y - 5, 10, 10);
+                
+                gr.FillEllipse(brush, l.Coordinates.X-5, l.Coordinates.Y-5, 10,10);
                 gr.DrawString(l.Name, new Font("Arial", 6), Brushes.Black, new Point(l.Coordinates.X + 5, l.Coordinates.Y));
             }
             
@@ -62,21 +65,22 @@ namespace GogoFamis
         }
 
 
-
+        //not working not sure how to implement this part 
+        //for changing city and having the colored connection
         private void DrawStartDest(Route route, Graphics gr, PaintEventArgs e)
         {
            
             brush = new SolidBrush(Color.Blue);
-            Draw(e.Graphics, map.LocationList);
+            DrawCity(e.Graphics, map.LocationList,brush);
             DrawCon(e.Graphics,map.ConnectionList);
 
-            for (int i = 0; i < route.Stations.Count - 1; i++)
+            for (int i = 0; i < route.Cities.Count - 1; i++)
             {
-                gr.DrawLine(pen, route.Stations[i].Coordinates.X, route.Stations[i].Coordinates.Y,route.Stations[i + 1].Coordinates.X, route.Stations[i + 1].Coordinates.Y); 
+                gr.DrawLine(pen, route.Cities[i].Coordinates.X, route.Cities[i].Coordinates.Y,route.Cities[i + 1].Coordinates.X, route.Cities[i + 1].Coordinates.Y); 
             }
 
             brush = new SolidBrush(Color.Blue);
-            //Draw(gr,route.Stations[0]);
+            DrawCity(gr,route.Cities[0],brush);
 
             brush = new SolidBrush(Color.Green);
             //Draw(gr, route.Stations[route.Stations.Count-1]);
@@ -145,8 +149,9 @@ namespace GogoFamis
             {
                 if (l.Name == cbStart.Text)
                     routeStartPoint = l;
-                Brush brush = new SolidBrush(Color.Blue);
-
+                 brush = new SolidBrush(Color.Blue);
+         
+               
                 
             }            
         }

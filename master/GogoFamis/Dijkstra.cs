@@ -27,7 +27,7 @@ namespace GogoFamis
             Route newRoute = new Route();
             foreach (Location ycit in node.Select(n => Locations.Find(x => x.Name == n.Name)))
             {
-                newRoute.Stations.Add(ycit);
+                newRoute.Cities.Add(ycit);
             }
             return newRoute;
         }

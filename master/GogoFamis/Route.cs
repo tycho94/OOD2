@@ -8,11 +8,11 @@ namespace GogoFamis
 {
     class Route
     {
-        public List<Location> Stations { get; set; }
+        public List<Location> Cities { get; set; }
 
         public Route()
         {
-            Stations = new List<Location>();
+            Cities = new List<Location>();
         }
 
     }
