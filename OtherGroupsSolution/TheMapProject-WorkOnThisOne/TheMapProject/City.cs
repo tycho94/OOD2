@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Drawing;
 
 namespace TheMapProject
 {
@@ -13,8 +14,7 @@ namespace TheMapProject
         public City(string name, int x, int y)
         {
             Name = name;
-            X = x;
-            Y = y;
+            
             Connections = new List<Connection>();
         }
 

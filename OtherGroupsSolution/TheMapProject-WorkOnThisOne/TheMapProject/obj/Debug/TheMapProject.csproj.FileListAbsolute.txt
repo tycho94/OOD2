@@ -36,3 +36,10 @@ C:\Users\Wai-Yip(Kip)\Downloads\OOD\OOD2\OOD2\OtherGroupsSolution\TheMapProject-
 C:\Users\Wai-Yip(Kip)\Downloads\OOD\OOD2\OOD2\OtherGroupsSolution\TheMapProject-WorkOnThisOne\TheMapProject\obj\Debug\TheMapProject.Information.resources
 C:\Users\Wai-Yip(Kip)\Downloads\OOD\OOD2\OOD2\OtherGroupsSolution\TheMapProject-WorkOnThisOne\TheMapProject\obj\Debug\TheMapProject.Properties.Resources.resources
 C:\Users\Wai-Yip(Kip)\Downloads\OOD\OOD2\OOD2\OtherGroupsSolution\TheMapProject-WorkOnThisOne\TheMapProject\obj\Debug\TheMapProject.csproj.GenerateResource.Cache
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\OtherGroupsSolution\TheMapProject-WorkOnThisOne\TheMapProject\bin\Debug\TheMapProject.exe
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\OtherGroupsSolution\TheMapProject-WorkOnThisOne\TheMapProject\bin\Debug\TheMapProject.pdb
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\OtherGroupsSolution\TheMapProject-WorkOnThisOne\TheMapProject\obj\Debug\TheMapProject.csprojResolveAssemblyReference.cache
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\OtherGroupsSolution\TheMapProject-WorkOnThisOne\TheMapProject\obj\Debug\TheMapProject.Form1.resources
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\OtherGroupsSolution\TheMapProject-WorkOnThisOne\TheMapProject\obj\Debug\TheMapProject.Information.resources
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\OtherGroupsSolution\TheMapProject-WorkOnThisOne\TheMapProject\obj\Debug\TheMapProject.Properties.Resources.resources
+C:\Users\Tycho\Documents\School\Fontys\OOD2\Application\OOD2\OtherGroupsSolution\TheMapProject-WorkOnThisOne\TheMapProject\obj\Debug\TheMapProject.csproj.GenerateResource.Cache

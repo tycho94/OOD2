@@ -27,7 +27,7 @@ namespace GogoFamis
         {
 
         }
-        private void ShortestCal(Location origin, Location destination, Graphics gr)
+        public void ShortestCal(Location origin, Location destination, Graphics gr)
         {
             Calculation cal = new Dijkstra(this);
             var result = cal.Calculate(origin, destination, LocationList);
@@ -65,7 +65,6 @@ namespace GogoFamis
             {
                 gr.DrawLine(new Pen(Brushes.Black), c.Loc1.Coordinates, c.Loc2.Coordinates);
             }
-
         }
 
         //public List<Location> CalculateRoute(Location start, Location dest, Route route, List<Connection> conlist, List<Location> loclist)

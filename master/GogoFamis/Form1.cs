@@ -16,7 +16,6 @@ namespace GogoFamis
         private Location routeStartPoint;
         private Location routeEndPoint;
         private Brush brush;
-        private Pen pen;
         int caseSwitch = 0;
 
         /// <summary>
@@ -41,19 +40,24 @@ namespace GogoFamis
             {
                 map.DrawCity(gr, map.LocationList, brush);
                 map.DrawCon(gr, map.ConnectionList);
-            }
 
-            switch (caseSwitch)
-            {
-                case 1:
-                    {
-                        if(cbStart.SelectedIndex != null)
-                            DrawSelectedLocation(routeStartPoint, e);
-                        if (cbDest.SelectedIndex != null)
-                            DrawSelectedLocation(routeEndPoint, e);
-                        
-                        break;
-                    }
+                switch (caseSwitch)
+                {
+                    case 1:
+                        {
+                            if (cbStart.SelectedItem != null)
+                                DrawSelectedLocation(routeStartPoint, e);
+                            if (cbDest.SelectedItem != null)
+                                DrawSelectedLocation(routeEndPoint, e);
+
+                            break;
+                        }
+                    case 2:
+                        {
+                            map.ShortestCal(routeStartPoint, routeEndPoint, gr);
+                            break;
+                        }
+                }
             }
         }
 
@@ -66,27 +70,12 @@ namespace GogoFamis
             gr.FillEllipse(brush, l.Coordinates.X - 5, l.Coordinates.Y - 5, 10, 10);
         }
 
-
-        private void DrawRoutes(Route route, Graphics gr)
-        {
-
-            pen = new Pen(Color.Red);
-            // draw lines
-            for (int i = 0; i < route.Cities.Count - 1; i++)
-            {
-                gr.DrawLine(pen, route.Cities[i].Coordinates.X, route.Cities[i].Coordinates.Y, route.Cities[i + 1].Coordinates.X, route.Cities[i + 1].Coordinates.Y);
-            }
-            // draw origin
-            brush = new SolidBrush(Color.Red);
-            map.DrawCity(gr, route.Cities, brush);
-            // draw destination
-            brush = new SolidBrush(Color.GreenYellow);
-            map.DrawCity(gr, route.Cities, brush);
-        }
-
-
         private void button1_Click(object sender, EventArgs e)
         {
+            if (cbAlgorithm.Text == "Dijkstra")
+            {
+                caseSwitch = 2;
+            }
             pbMap.Invalidate();
         }
 
@@ -94,10 +83,6 @@ namespace GogoFamis
         {
 
         }
-
-        //public void ClearMap();
-
-        //public void RefreshMap();
 
         private void pbMap_MouseMove(object sender, MouseEventArgs e)
         {
@@ -109,7 +94,7 @@ namespace GogoFamis
             Stream stream;
             OpenFileDialog openDialog = new OpenFileDialog();
             openDialog.Filter = "txt files (*.txt)|*.txt";
-
+            caseSwitch = 0;
             if (openDialog.ShowDialog() == DialogResult.OK)
             {
                 if ((stream = openDialog.OpenFile()) != null)
@@ -124,8 +109,7 @@ namespace GogoFamis
                         cbStart.Items.Add(l.Name);
                         cbDest.Items.Add(l.Name);
                     }
-                    pbMap.Refresh();
-
+                    pbMap.Invalidate();
                 }
             }
             else

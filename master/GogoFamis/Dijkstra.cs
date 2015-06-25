@@ -66,7 +66,7 @@ namespace GogoFamis
                 List<Node> unvisitedNeighBours = current.GetNeighbours().Where(x => !x.Visited).ToList();
                 foreach (Node unvisitedNode in unvisitedNeighBours)
                 {
-                    int sum = current.Val + current.GetKantenGewichtToPartner(unvisitedNode);
+                    int sum = current.Val + current.GetEdgeWeightToPartner(unvisitedNode);
                     if (sum < unvisitedNode.Val)
                     {
                         unvisitedNode.Val = sum;
@@ -149,7 +149,7 @@ namespace GogoFamis
         {
             _name = name;
         }
-        public int GetKantenGewichtToPartner(Node partner)
+        public int GetEdgeWeightToPartner(Node partner)
         {
             return GetCorrespondingEdge(partner).Value;
         }
