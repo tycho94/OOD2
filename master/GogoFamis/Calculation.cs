@@ -9,6 +9,6 @@ namespace GogoFamis
     abstract class Calculation
     {
         public abstract Route ResultRoute { get; set; }
-        public abstract Route Calculate(Location origin, Location destination);
+        public abstract Route Calculate(Location origin, Location destination, List<Location> Locations);
     }
 }

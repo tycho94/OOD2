@@ -13,11 +13,9 @@ namespace GogoFamis
         List<Node> _graph;
 
 
-        public override Route Calculate(Location origin, Location destination)
+        public override Route Calculate(Location origin, Location destination, List<Location> Locations)
         {
             List<Node> node;
-            List<Location> Locations = new List<Location>();
-
 
             Node y = _graph.Find(x => x.Name == origin.Name);
             Node xl = _graph.Find(x => x.Name == destination.Name);
@@ -33,8 +31,9 @@ namespace GogoFamis
         }
 
 
-        public void DijkstraRoute(List<Location> Locations)
+        public Dijkstra(Map map)
         {
+            List<Location> Locations = map.LocationList;
             List<Node> node = Locations.Select(cit => new Node(cit.Name)).ToList();
 
             //Add every Location to NODE
